@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tutorin</string>
+    <string-array name="Choices">
+        <item>Pelajar</item>
+        <item>Tutor</item>
+    </string-array>
+</resources>

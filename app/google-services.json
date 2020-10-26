@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1065835765198",
+    "firebase_url": "https://tutor-in.firebaseio.com",
+    "project_id": "tutor-in",
+    "storage_bucket": "tutor-in.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065835765198:android:3edac1ce18b24b3730df9f",
+        "android_client_info": {
+          "package_name": "com.tutorin.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065835765198-725um65rg7c4ka23469n9go0f0i7esmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrtFeKE4woRx4LApLaNNY-c7sW-DU0zTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065835765198-725um65rg7c4ka23469n9go0f0i7esmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
