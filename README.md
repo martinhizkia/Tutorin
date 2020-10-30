@@ -1,1 +1,1 @@
-"# Tutorin" 
+Kerjain jo gow anjing
