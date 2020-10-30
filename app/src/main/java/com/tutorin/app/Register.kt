@@ -58,9 +58,6 @@ class Register : AppCompatActivity(){
             }
         }
 
-
-
-
         btnRegister2.setOnClickListener{
             val email: String = etEmail2.text.toString().trim()
             val password: String = etPassword2.text.toString().trim()
