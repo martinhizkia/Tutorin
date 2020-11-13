@@ -20,7 +20,8 @@
             android:textAlignment="center"
             android:text="Judul Mata Pelajaran"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
