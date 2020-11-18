@@ -10,80 +10,111 @@
     android:layout_marginTop="4dp"
     android:layout_marginRight="8dp"
     android:layout_marginBottom="4dp"
-    card_view:cardCornerRadius="4dp">
+    card_view:cardCornerRadius="25dp"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="196dp"
         android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/img_subject"
-            android:layout_width="139dp"
-            android:layout_height="179dp"
-            android:layout_marginBottom="4dp"
-            android:scaleType="centerCrop"
-            tools:src="@color/colorAccent" />
+        <TextView
+            android:id="@+id/tv_orderID"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="@string/string_orderID" />
+
+        <TextView
+            android:id="@+id/tv_statusOrder"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_orderID"
+            android:layout_alignStart="@+id/tv_orderID"
+            android:layout_alignEnd="@+id/tv_orderID"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="@string/string_orderStatus" />
 
         <TextView
             android:id="@+id/tv_subjectName"
-            android:layout_width="191dp"
+            android:layout_width="115dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:layout_toEndOf="@id/img_subject"
-            android:layout_toRightOf="@id/img_subject"
-            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="137dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/tv_orderID"
+            android:textSize="15sp"
             android:textStyle="bold"
             tools:text="@string/subjectnameHistory" />
 
-        <TextView
-            android:id="@+id/tv_item_detail"
-            android:layout_width="194dp"
-            android:layout_height="75dp"
-            android:layout_above="@+id/layout_button"
-            android:layout_below="@id/tv_subjectName"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="4dp"
-            android:layout_toEndOf="@id/img_subject"
-            android:layout_toRightOf="@id/img_subject"
-            android:ellipsize="end"
-            android:maxLines="5"
-            tools:text="@string/detailHistory" />
-
-        <LinearLayout
-            android:id="@+id/layout_button"
-            android:layout_width="192dp"
-            android:layout_height="wrap_content"
+        <View
+            android:layout_width="372dp"
+            android:layout_height="1dp"
+            android:layout_alignStart="@+id/tv_statusOrder"
+            android:layout_alignEnd="@+id/tv_subjectName"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="10dp"
-            android:layout_toEndOf="@id/img_subject"
-            android:layout_toRightOf="@id/img_subject"
-            android:orientation="horizontal">
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="107dp"
+            android:background="#c0c0c0" />
 
-            <Button
-                android:id="@+id/btn_viewDetail"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="86dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/viewDetailHistory"
-                android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_tutorName"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_statusOrder"
+            android:layout_alignStart="@+id/tv_orderID"
+            android:layout_alignEnd="@+id/tv_orderID"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="@string/string_tutorName" />
 
-            <Button
-                android:id="@+id/btn_addtoFav"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="98dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/addFavoriteHistory"
-                android:textSize="12sp" />
-        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_orderDate"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_statusOrder"
+            android:layout_alignStart="@+id/tv_subjectName"
+            android:layout_alignEnd="@+id/tv_subjectName"
+            android:layout_marginTop="28dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="@string/string_dateTime" />
+
+        <ImageView
+            android:layout_width="385dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="141dp"
+            android:background="@drawable/rect_black" />
+
+        <TextView
+            android:id="@+id/tvTariff"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_orderDate"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="34dp"
+            android:foregroundTint="#00FFFFFF"
+            android:text="TextView" />
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

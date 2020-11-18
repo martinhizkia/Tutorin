@@ -1,7 +1,15 @@
 package com.tutorin.app.`object`
+import java.io.Serializable
+import java.util.*
 
-data class dataHistory (
-    var subjectName: String = "",
-    var orderDetail: String = "",
-    var subjectPhoto: Int = 0
-)
+class dataHistory: Serializable {
+    var orderID: String = ""
+    var tutorName: String = ""
+    var orderDate: String = ""
+    var orderSubject: String = ""
+    var tariff: Int = 0
+    var orderRating: Float = 0.0F
+    var tutorReview: String = ""
+
+
+}

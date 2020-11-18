@@ -1,4 +1,5 @@
 package com.tutorin.app.adapter
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,12 +10,22 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.tutorin.app.*
 import com.tutorin.app.`object`.dataHistory
+import org.w3c.dom.Text
 
 class historyAdapter(private val listHistory: ArrayList<dataHistory>): RecyclerView.Adapter<historyAdapter.ListViewHolder>() {
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
     inner class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        var tvName: TextView = itemView.findViewById(R.id.tv_subjectName)
-        var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
-        var imgPhoto: ImageView = itemView.findViewById(R.id.img_subject)
+        var tvOrderID: TextView = itemView.findViewById(R.id.tv_orderID)
+        var tvSubjectName: TextView = itemView.findViewById(R.id.tv_subjectName)
+        var tvOrderDate: TextView = itemView.findViewById(R.id.tv_orderDate)
+        var tvTariff: TextView = itemView.findViewById(R.id.tvTariff)
+        var tvTutorName: TextView = itemView.findViewById(R.id.tv_tutorName)
+
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {
@@ -25,15 +36,24 @@ class historyAdapter(private val listHistory: ArrayList<dataHistory>): RecyclerV
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val history = listHistory[position]
-        Glide.with(holder.itemView.context)
-            .load(history.subjectPhoto)
-            .apply(RequestOptions().override(55, 55))
-            .into(holder.imgPhoto)
-        holder.tvName.text = history.subjectName
-        holder.tvDetail.text = history.orderDetail
+
+        holder.tvOrderID.text = history.orderID
+        holder.tvSubjectName.text = history.orderSubject
+        holder.tvOrderDate.text = history.orderDate
+        holder.tvTariff.text = history.tariff.toString()
+        holder.tvTutorName.text = history.tutorName
+        holder.tvTariff.setTextColor(Color.WHITE)
+
+        holder.itemView.setOnClickListener {
+            onItemClickCallback.onItemClicked(listHistory[holder.adapterPosition])
+        }
     }
 
     override fun getItemCount(): Int {
         return listHistory.size
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: dataHistory)
     }
 }

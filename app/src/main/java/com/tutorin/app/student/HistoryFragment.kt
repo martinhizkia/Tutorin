@@ -1,5 +1,6 @@
 package com.tutorin.app.student
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
@@ -11,10 +12,13 @@ import androidx.core.content.res.ComplexColorCompat.inflate
 import androidx.core.graphics.drawable.DrawableCompat.inflate
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.tutorin.app.Home
 import com.tutorin.app.R
 import com.tutorin.app.`object`.dataHistory
 import com.tutorin.app.`object`.exampleData
 import com.tutorin.app.adapter.historyAdapter
+import kotlinx.android.synthetic.main.detailed_history.*
+import kotlinx.android.synthetic.main.detailed_history.view.*
 import java.util.zip.Inflater
 
 // TODO: Rename parameter arguments, choose names that match
@@ -42,8 +46,24 @@ class HistoryFragment : Fragment() {
 
     private fun showRecycleList(){
         rvHistory.layoutManager = LinearLayoutManager(activity)
-        val listHeroAdapter = historyAdapter(list)
-        rvHistory.adapter = listHeroAdapter
+        val listHistory = historyAdapter(list)
+        rvHistory.adapter = listHistory
+        listHistory.setOnItemClickCallback(
+            object: historyAdapter.OnItemClickCallback{
+                override fun onItemClicked(data: dataHistory) {
+                    val movetoOrderDetailed = Intent(activity, DetailedHistory::class.java).apply{
+                        putExtra(DetailedHistory.orderDetail, data)
+                    }
+                    activity?.startActivity(movetoOrderDetailed)
+                }
+
+                private fun putExtra(orderDetail: String, data: dataHistory) {
+
+                }
+
+            }
+        )
     }
+    
 }
 

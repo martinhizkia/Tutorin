@@ -4,12 +4,19 @@
         <item>Pelajar</item>
         <item>Tutor</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="addFavoriteHistory">Add to Favorite </string>
     <string name="viewDetailHistory">View Detail </string>
     <string name="detailHistory">Order Detail </string>
     <string name="subjectnameHistory">Subject Name </string>
+    <string name="orderID">Order ID</string>
+    <string name="orderStatus">Pending</string>
+    <string name="tutorName">Nama Tutor</string>
+    <string name="string_tutorName">nama Tutor</string>
+    <string name="string_orderID">order ID</string>
+    <string name="string_orderStatus">order status</string>
+    <string name="string_dateTime">tanggal</string>
+
     <string-array name="Topics">
         <item>Business</item>
         <item>Engineering</item>

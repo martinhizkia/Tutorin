@@ -15,20 +15,56 @@ object exampleData {
         "Thermodynamics",
         "Algorithm")
 
-    private val orderDesc = arrayOf(
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel lacus in felis pharetra malesuada vitae sed diam. Nulla vestibulum."
+    private val expOrderID = arrayOf(
+        12312333,
+        12313173,
+        12313123,
+        12312333,
+        12313173,
+        12313123,
+        12312333,
+        12313173,
+        12313123,
+        12312333)
+
+    private val expOrderDate = arrayOf(
+        "12 Sept 2019",
+        "23 Oct 2020",
+        "11 Sept 2001",
+        "15 Jan 2093",
+        "23 Nov 2031",
+        "10 Jun 2013",
+        "23 Oct 2020",
+        "11 Sept 2001",
+        "15 Jan 2093",
+        "23 Nov 2031"
     )
-    private val subjImg = intArrayOf(
-        R.drawable.ic_business,
-        R.drawable.ic_engineering,
-        R.drawable.ic_humanities,
-        R.drawable.ic_laws,
-        R.drawable.ic_medical,
-        R.drawable.ic_business,
-        R.drawable.ic_engineering,
-        R.drawable.ic_humanities,
-        R.drawable.ic_laws,
-        R.drawable.ic_medical
+    private val expTutorName = arrayOf(
+        "Roy Keane",
+        "Harry Keane",
+        "Frank Underwood",
+        "Jon Snow",
+        "Harry Styles",
+        "Elon Musk",
+        "Maudy Ayunda",
+        "Justinus Lhaksana",
+        "Jesse Lingard",
+        "Bernie Sanders")
+
+    private val expTariff = arrayOf(
+        50000,
+        120000,
+        123555,
+        50000,
+        120000,
+        123555,
+        50000,
+        120000,
+        123555,
+        501235)
+
+    private val expReview = arrayOf(
+        "Asik banget ngajarnya anjing"
     )
 
 
@@ -37,9 +73,12 @@ object exampleData {
             val list = arrayListOf<dataHistory>()
             for (position in subjectName.indices) {
                 val dataHistory = dataHistory()
-                dataHistory.subjectName = subjectName[position]
-                dataHistory.orderDetail = orderDesc[0]
-                dataHistory.subjectPhoto = subjImg[position]
+                dataHistory.orderSubject = subjectName[position]
+                dataHistory.orderID = expOrderID[position].toString()
+                dataHistory.orderDate = expOrderDate[position]
+                dataHistory.tutorName = expTutorName[position]
+                dataHistory.tariff = expTariff[position]
+                dataHistory.tutorReview = expReview[0]
                 list.add(dataHistory)
             }
             return list

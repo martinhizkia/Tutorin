@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/detTutorReview"
+        android:layout_width="363dp"
+        android:layout_height="108dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detOrderRating"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        tools:layout_editor_absoluteY="530dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/detTutorName"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:text="tutorName"
+        app:layout_constraintEnd_toEndOf="@+id/detOrderID"
+        app:layout_constraintStart_toStartOf="@+id/detOrderID"
+        tools:layout_editor_absoluteY="219dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/detOrderID"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:text="OrderID"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        tools:layout_editor_absoluteY="142dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:text="orderTariff"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        tools:layout_editor_absoluteY="392dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="25dp"
+        android:text="orderDate"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="276dp"
+        android:text="tutorReview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/detOrderDate"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="335dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/detOrderTariff"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="23dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/detOrderRating"
+        app:layout_constraintEnd_toEndOf="@+id/detOrderDate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/detOrderDate"
+        app:layout_constraintTop_toBottomOf="@+id/detOrderDate" />
+
+    <TextView
+        android:id="@+id/detOrderRating"
+        android:layout_width="110dp"
+        android:layout_height="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detOrderTariff"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/detOrderTariff"
+        tools:layout_editor_absoluteY="431dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/detSubjName"
+        android:layout_width="96dp"
+        android:layout_height="22dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detTutorName"
+        app:layout_constraintStart_toStartOf="@+id/detTutorName"
+        tools:layout_editor_absoluteY="285dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="118dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Order History"
+        app:layout_constraintBottom_toTopOf="@+id/detOrderID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
