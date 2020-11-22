@@ -5,16 +5,64 @@
     android:layout_height="match_parent"
     tools:context=".student.HomeFragment"
     android:background="@drawable/ic_background_homepage">
-    <ImageButton
+
+    <ImageView
         android:id="@+id/buttonBusiness"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center_vertical"
-        android:src="@drawable/ic_business"
-        android:background="@color/fui_transparent"
         android:layout_marginStart="51dp"
+        android:background="@color/fui_transparent"
+        android:src="@drawable/ic_business" />
+
+    <ImageView
+        android:id="@+id/buttonEngineering"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_engineering"
+        android:background="@color/fui_transparent"
         />
 
+    <ImageView
+        android:id="@+id/buttonHumanities"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:background="@color/fui_transparent"
+        android:src="@drawable/ic_humanities" />
+
+    <ImageView
+        android:id="@+id/buttonMedicals"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_medical"
+        android:background="@color/fui_transparent"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="140dp"
+        />
+    <ImageView
+        android:id="@+id/buttonIT"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_itdev"
+        android:background="@color/fui_transparent"
+        android:layout_marginTop="140dp"
+        />
+
+    <ImageView
+        android:id="@+id/buttonLaws"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:background="@color/fui_transparent"
+        android:src="@drawable/ic_laws"
+        android:layout_marginTop="140dp"
+        />
 
 
 </FrameLayout>

@@ -19,13 +19,12 @@
         tools:listitem="@layout/business_layout" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/topicsName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="32dp"
-        android:text="Business"
         android:textColor="@android:color/black"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/businessRecyclerView"
