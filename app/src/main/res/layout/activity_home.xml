@@ -25,7 +25,9 @@
         android:elevation="2dp"
         android:background="@drawable/bottomnav_shape"
         app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="unlabeled"
         />
+
 
     <fragment
         android:id="@+id/nav_host_fragment"

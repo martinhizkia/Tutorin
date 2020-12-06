@@ -10,11 +10,14 @@ import kotlinx.android.synthetic.main.activity_business.*
 class business : AppCompatActivity() {
     private var listJudul = mutableListOf<String>("Dasar Berbisnis", "Kewirausahawan", "Bisnis 1", "Bisnis 2", "Bisnis 3", "Bisnis 4")
 
-    val topicName =intent.getStringExtra("Topics")
+    companion object{
+        const val topicsName = ""
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_business)
-        topicsName
+
+
         businessRecyclerView.adapter = businessAdapter(listJudul)
         businessRecyclerView.layoutManager = LinearLayoutManager(this)
         businessRecyclerView.setHasFixedSize(true)

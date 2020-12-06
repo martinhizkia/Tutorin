@@ -6,22 +6,70 @@
     tools:context=".student.HomeFragment"
     android:background="@drawable/ic_background_homepage">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build Your Own Path,\nThrough Others"
+        android:textStyle="bold"
+        android:layout_marginTop="104dp"
+        android:layout_marginStart="21dp"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topics"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="48dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
     <ImageView
         android:id="@+id/buttonBusiness"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="51dp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
         android:background="@color/fui_transparent"
         android:src="@drawable/ic_business" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="83dp"
+        android:textColor="@color/colorPrimaryDark"
+
+        />
+"
 
     <ImageView
         android:id="@+id/buttonEngineering"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
         android:src="@drawable/ic_engineering"
         android:background="@color/fui_transparent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engineering"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="83dp"
+        android:textColor="@color/colorPrimaryDark"
         />
 
     <ImageView
@@ -30,8 +78,19 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginStart="130dp"
+        android:layout_marginTop="35dp"
         android:background="@color/fui_transparent"
         android:src="@drawable/ic_humanities" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humanities"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="83dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
 
     <ImageView
         android:id="@+id/buttonMedicals"
@@ -41,7 +100,18 @@
         android:src="@drawable/ic_medical"
         android:background="@color/fui_transparent"
         android:layout_marginStart="51dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="175dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicals"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="223dp"
+        android:textColor="@color/colorPrimaryDark"
         />
     <ImageView
         android:id="@+id/buttonIT"
@@ -50,7 +120,16 @@
         android:layout_gravity="center"
         android:src="@drawable/ic_itdev"
         android:background="@color/fui_transparent"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="175dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IT &#38; Development"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="223dp"
+        android:textColor="@color/colorPrimaryDark"
         />
 
     <ImageView
@@ -61,7 +140,17 @@
         android:layout_marginStart="130dp"
         android:background="@color/fui_transparent"
         android:src="@drawable/ic_laws"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="175dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laws"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="223dp"
+        android:textColor="@color/colorPrimaryDark"
         />
 
 
