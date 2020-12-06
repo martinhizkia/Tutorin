@@ -6,13 +6,14 @@
         android:id="@+id/navHome"
         android:icon="@drawable/ic_home"
         android:title=""
-
+        app:iconTint="@color/colorBlack"
 
         />
     <item
         android:id="@+id/navHistory"
         android:icon="@drawable/ic_item"
         android:title=""
+        app:iconTint="@color/colorBlack"
 
         />
 
@@ -20,6 +21,7 @@
         android:id="@+id/navProfile"
         android:icon="@drawable/ic_profile"
         android:title=""
+        app:iconTint="@color/colorBlack"
 
         />
 </menu>
