@@ -24,6 +24,7 @@ class UpdateProfile : AppCompatActivity() {
 
     }
 
+    
     /*override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         ivProfile.setOnClickListener {
