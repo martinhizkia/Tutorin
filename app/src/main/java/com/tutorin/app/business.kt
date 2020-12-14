@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.OrientationHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.tutorin.app.adapter.businessAdapter
 import kotlinx.android.synthetic.main.activity_business.*
 
@@ -17,9 +19,8 @@ class business : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_business)
 
-
         businessRecyclerView.adapter = businessAdapter(listJudul)
-        businessRecyclerView.layoutManager = LinearLayoutManager(this)
+        businessRecyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
         businessRecyclerView.setHasFixedSize(true)
     }
 }
