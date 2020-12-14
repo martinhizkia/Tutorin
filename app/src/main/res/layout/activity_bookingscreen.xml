@@ -33,7 +33,140 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.498" >
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/ic_topics" />
+        <TextView
+            android:id="@+id/booked_topics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{Topics}"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="70dp"
+            android:textAppearance="bold"
+            android:textFontWeight="600"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tutor_name_params"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutor Name"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tutor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{Tutor Name}"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/order_date_params"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{Order Date}"
+            android:layout_gravity="center"
+            android:layout_marginStart="70dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/total_session_params"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Session"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/total_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{Total Session}"
+            android:layout_gravity="center"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/fee_params"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fee"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{Fee}"
+
+            android:layout_gravity="center"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/Total_fee_params"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="130dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/Total_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{Total}"
+            android:layout_gravity="center"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="130dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            />
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/btnBooking"
@@ -46,7 +179,6 @@
         android:textColor="@color/colorwhite"
         android:textFontWeight="800"
         android:textSize="25dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.412"
