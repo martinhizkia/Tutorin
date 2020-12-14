@@ -93,20 +93,42 @@ class Register : AppCompatActivity(){
                     registeredUser.userEmail = registeredEmail
                     registeredUser.tutorOrNot = registeredTutorORNot
                     registeredUser.phoneNum = registeredPhoneNumber
+                    userID = auth.currentUser!!.uid
+                        if(registeredTutorORNot == false) {
+                            Intent(this@Register, Home::class.java).also {
+                                userID = auth.currentUser!!.uid
+                                FirebaseDatabase.getInstance().getReference("Users")
+                                    .child(FirebaseAuth.getInstance().currentUser!!.uid)
+                                    .setValue(registeredUser)
+                                    .addOnCompleteListener(OnCompleteListener {
+                                        if (it.isSuccessful) {
+                                            Toast.makeText(this, "User Created", Toast.LENGTH_SHORT)
+                                                .show()
+                                        }
+                                    })
+                                it.flags =
+                                    Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                startActivity(it)
+                            }
+                        }
+                        else{
+                            Intent(this@Register, Home::class.java).also {
+                                userID = auth.currentUser!!.uid
+                                FirebaseDatabase.getInstance().getReference("Tutors")
+                                    .child(FirebaseAuth.getInstance().currentUser!!.uid)
+                                    .setValue(registeredUser)
+                                    .addOnCompleteListener(OnCompleteListener {
+                                        if (it.isSuccessful) {
+                                            Toast.makeText(this, "User Created", Toast.LENGTH_SHORT)
+                                                .show()
+                                        }
+                                    })
+                                it.flags =
+                                    Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                startActivity(it)
+                            }
+                        }
 
-                    Intent(this@Register, Home::class.java).also{
-                        userID = auth.currentUser!!.uid
-                        FirebaseDatabase.getInstance().getReference("Users")
-                            .child(FirebaseAuth.getInstance().currentUser!!.uid)
-                            .setValue(registeredUser).addOnCompleteListener(OnCompleteListener {
-                                if(it.isSuccessful){
-                                    Toast.makeText(this, "User Created", Toast.LENGTH_SHORT).show()
-                                }
-                            })
-
-                        it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                        startActivity(it)
-                    }
                 }
                 else{
                     Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
@@ -123,3 +145,34 @@ class Register : AppCompatActivity(){
         }
     }
 }
+
+/*
+private fun registerUser(email: String, password: String) {
+    auth.createUserWithEmailAndPassword(email, password)
+        .addOnCompleteListener(this){
+            if(it.isSuccessful){
+                registeredUser.fullName = registeredFullName
+                registeredUser.userEmail = registeredEmail
+                registeredUser.tutorOrNot = registeredTutorORNot
+                registeredUser.phoneNum = registeredPhoneNumber
+
+                Intent(this@Register, Home::class.java).also{
+                    userID = auth.currentUser!!.uid
+                    FirebaseDatabase.getInstance().getReference("Users")
+                        .child(FirebaseAuth.getInstance().currentUser!!.uid)
+                        .setValue(registeredUser).addOnCompleteListener(OnCompleteListener {
+                            if(it.isSuccessful){
+                                Toast.makeText(this, "User Created", Toast.LENGTH_SHORT).show()
+                            }
+                        })
+
+                    it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(it)
+                }
+            }
+            else{
+                Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
+            }
+        }
+}
+*/
