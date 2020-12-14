@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splashscreen"
-    android:background="@drawable/ic_splash_screen"
-    >
-
+    tools:context=".BookingscreenActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
