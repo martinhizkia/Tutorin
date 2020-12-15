@@ -25,7 +25,7 @@
                 android:layout_marginStart="17dp"
                 android:layout_marginEnd="260dp"
                 android:text="My Profile"
-                android:textAppearance="bold"
+
                 android:textFontWeight="1000"
                 android:textSize="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,7 @@
                 android:layout_marginStart="17dp"
                 android:layout_marginEnd="260dp"
                 android:text="General"
-                android:textAppearance="bold"
+
                 android:textFontWeight="500"
                 android:textSize="24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +59,7 @@
                 android:layout_marginStart="17dp"
                 android:layout_marginEnd="260dp"
                 android:text="Account"
-                android:textAppearance="bold"
+
                 android:textFontWeight="500"
                 android:textSize="24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -188,7 +188,7 @@
                 android:layout_marginStart="128dp"
                 android:layout_marginTop="108dp"
                 android:text="Jonathan"
-                android:textAppearance="bold"
+
                 android:textColor="@color/colorPrimaryDark"
                 android:textFontWeight="1000"
                 android:textSize="20sp"

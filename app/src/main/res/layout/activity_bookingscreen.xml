@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Appointment"
-        android:textAppearance="bold"
+
         android:textFontWeight="600"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +52,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="70dp"
             android:layout_marginTop="70dp"
-            android:textAppearance="bold"
+
             android:textFontWeight="600"
             android:textSize="18sp"
             />
@@ -175,7 +175,7 @@
         android:layout_marginHorizontal="40dp"
         android:background="@drawable/buttonauth_shape"
         android:text="Book a Session"
-        android:textAppearance="bold"
+
         android:textColor="@color/colorwhite"
         android:textFontWeight="800"
         android:textSize="25dp"
