@@ -15,7 +15,7 @@
         <activity android:name=".student.UpdateProfile" />
         <activity android:name=".student.DetailedHistory" />
         <activity android:name=".student.DetailedOrderHistory" />
-        <activity android:name=".business" />
+        <activity android:name=".Topics" />
         <activity android:name=".Splashscreen" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".Home" />

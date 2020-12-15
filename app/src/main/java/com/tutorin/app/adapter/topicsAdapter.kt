@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tutorin.app.R
 import kotlinx.android.synthetic.main.business_layout.view.*
 
-class businessAdapter(private val judulList: List<String>): RecyclerView.Adapter<businessAdapter.ViewHolder>() {
+class topicsAdapter(private val judulList: List<String>): RecyclerView.Adapter<topicsAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val textView: TextView = itemView.text_view
