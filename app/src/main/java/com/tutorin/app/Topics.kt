@@ -19,8 +19,10 @@ class Topics : AppCompatActivity() {
         val ss:String? = intent.getStringExtra("Topics")
         val topicsName: TextView = findViewById(R.id.topicsName)
         topicsName.text = ss
+
         businessRecyclerView.adapter = topicsAdapter(listJudul)
         businessRecyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
         businessRecyclerView.setHasFixedSize(true)
+
     }
 }
