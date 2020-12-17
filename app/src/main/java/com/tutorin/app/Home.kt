@@ -27,7 +27,6 @@ class Home : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
 
-
         auth = FirebaseAuth.getInstance()
         val currentUser = auth!!.currentUser
 
@@ -39,29 +38,7 @@ class Home : AppCompatActivity() {
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         nav_bottom.setupWithNavController(navController)
-
     }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.option_menu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.logout ->{
-                auth.signOut()
-                Intent(this@Home, Login::class.java).also {
-                    it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                    startActivity(it)
-                }
-                return true
-            }
-            else -> return true
-        }
-    }
-
-
 
 }
 
