@@ -14,7 +14,6 @@
         android:icon="@drawable/ic_item"
         android:title=""
         app:iconTint="@color/colorBlack"
-
         />
 
     <item

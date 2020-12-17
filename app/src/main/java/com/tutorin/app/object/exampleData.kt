@@ -67,7 +67,7 @@ object exampleData {
         "Asik banget ngajarnya anjing"
     )
 
-
+/*
     val listData: ArrayList<dataHistory>
         get() {
             val list = arrayListOf<dataHistory>()
@@ -83,4 +83,5 @@ object exampleData {
             }
             return list
         }
+        */
 }

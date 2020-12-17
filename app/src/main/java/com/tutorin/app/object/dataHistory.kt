@@ -7,8 +7,8 @@ class dataHistory: Serializable {
     var tutorName: String = ""
     var orderDate: String = ""
     var orderSubject: String = ""
-    var tariff: Int = 0
-    var orderRating: Float = 0.0F
+    var tariff: String = ""
+    var orderRating: String = ""
     var tutorReview: String = ""
 
 

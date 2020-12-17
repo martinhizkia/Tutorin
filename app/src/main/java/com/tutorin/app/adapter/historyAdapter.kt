@@ -14,6 +14,7 @@ import org.w3c.dom.Text
 
 class historyAdapter(private val listHistory: ArrayList<dataHistory>): RecyclerView.Adapter<historyAdapter.ListViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallback
+    private lateinit var recyclerView: RecyclerView
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
@@ -36,14 +37,12 @@ class historyAdapter(private val listHistory: ArrayList<dataHistory>): RecyclerV
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val history = listHistory[position]
-
         holder.tvOrderID.text = history.orderID
         holder.tvSubjectName.text = history.orderSubject
         holder.tvOrderDate.text = history.orderDate
         holder.tvTariff.text = history.tariff.toString()
         holder.tvTutorName.text = history.tutorName
         holder.tvTariff.setTextColor(Color.WHITE)
-
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(listHistory[holder.adapterPosition])
         }

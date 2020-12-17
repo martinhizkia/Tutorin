@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/tv_orderID"
-            android:layout_width="115dp"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -33,7 +33,7 @@
 
         <TextView
             android:id="@+id/tv_statusOrder"
-            android:layout_width="115dp"
+            android:layout_width="109dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_orderID"
             android:layout_alignStart="@+id/tv_orderID"
@@ -41,7 +41,7 @@
             android:layout_marginStart="0dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="0dp"
+            android:layout_marginEnd="1dp"
             android:layout_marginRight="16dp"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -49,11 +49,11 @@
 
         <TextView
             android:id="@+id/tv_subjectName"
-            android:layout_width="115dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="137dp"
+            android:layout_marginStart="85dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:layout_toEndOf="@+id/tv_orderID"
@@ -74,12 +74,13 @@
 
         <TextView
             android:id="@+id/tv_tutorName"
-            android:layout_width="115dp"
+            android:layout_width="147dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_statusOrder"
             android:layout_alignStart="@+id/tv_orderID"
             android:layout_alignEnd="@+id/tv_orderID"
             android:layout_marginTop="25dp"
+            android:layout_marginEnd="-37dp"
             android:textSize="15sp"
             android:textStyle="bold"
             tools:text="@string/string_tutorName" />
@@ -106,13 +107,13 @@
 
         <TextView
             android:id="@+id/tvTariff"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_width="94dp"
+            android:layout_height="35dp"
             android:layout_below="@+id/tv_orderDate"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="295dp"
-            android:layout_marginTop="34dp"
-            android:foregroundTint="#00FFFFFF"
+            android:layout_marginStart="268dp"
+            android:layout_marginTop="28dp"
+            android:foregroundTint="@color/colorPrimary"
             android:text="TextView" />
 
     </RelativeLayout>
