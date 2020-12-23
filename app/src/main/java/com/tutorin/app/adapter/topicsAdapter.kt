@@ -1,17 +1,27 @@
 package com.tutorin.app.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.tutorin.app.R
+import com.tutorin.app.Tutors
+import com.tutorin.app.student.UpdateProfile
 import kotlinx.android.synthetic.main.business_layout.view.*
 
 class topicsAdapter(private val judulList: List<String>): RecyclerView.Adapter<topicsAdapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val textView: TextView = itemView.text_view
+        init {
+            itemView.setOnClickListener{ v: View ->
+                val intent = Intent (this, Tutors::class.java)
+                startActivity();
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
