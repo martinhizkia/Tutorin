@@ -2,19 +2,30 @@ package com.tutorin.app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.tutorin.app.adapter.tutorAdapter
 import kotlinx.android.synthetic.main.activity_tutor.*
 
-class Tutors : AppCompatActivity() {
+class Tutors : AppCompatActivity(), tutorAdapter.OnItemClickListener {
+    private val tutorList = generateDummyTutor(500)
+    private val adapter = tutorAdapter(tutorList, this)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutor)
 
-        val tutorExample = generateDummyTutor(500)
-        recycler_tutor.adapter = tutorAdapter(tutorExample)
+        recycler_tutor.adapter = adapter
         recycler_tutor.layoutManager = LinearLayoutManager(this)
         recycler_tutor.setHasFixedSize(true )
+    }
+
+    override fun onItemClick(position: Int) {
+        Toast.makeText(this, "Item $position clicked", Toast.LENGTH_SHORT).show()
+        val clickedItem = tutorList[position]
+        clickedItem.text1 = "Clicked"
+        adapter.notifyItemChanged(position)
+
     }
 
     private fun generateDummyTutor(size: Int): List<tutorDataExample>{

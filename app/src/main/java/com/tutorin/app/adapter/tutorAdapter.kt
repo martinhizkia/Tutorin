@@ -10,7 +10,10 @@ import com.tutorin.app.R
 import com.tutorin.app.tutorDataExample
 import kotlinx.android.synthetic.main.item_tutors.view.*
 
-class tutorAdapter(private  val tutorList: List<tutorDataExample>) : RecyclerView.Adapter<tutorAdapter.tutorViewHolder>() {
+class tutorAdapter(
+    private  val tutorList: List<tutorDataExample>,
+    private  val listener: OnItemClickListener
+) : RecyclerView.Adapter<tutorAdapter.tutorViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): tutorViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_tutors,
@@ -22,13 +25,29 @@ class tutorAdapter(private  val tutorList: List<tutorDataExample>) : RecyclerVie
         val currentItem = tutorList[position]
         holder.imageView.setImageResource(currentItem.imageResource)
         holder.textView1.text = currentItem.text1
+
     }
 
     override fun getItemCount() = tutorList.size
 
-    class tutorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+    inner class tutorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener{
         val imageView: ImageView = itemView.tutor_image
         val textView1: TextView = itemView.tutor_list_name
 
+        init{
+            itemView.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            val position = adapterPosition
+            if(position != RecyclerView.NO_POSITION){
+                listener.onItemClick(position)
+            }
+
+        }
+
+    }
+    interface  OnItemClickListener {
+        fun onItemClick(position: Int)
     }
 }
