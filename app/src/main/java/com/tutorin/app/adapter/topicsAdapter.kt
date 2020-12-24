@@ -17,9 +17,9 @@ class topicsAdapter(private val judulList: List<String>): RecyclerView.Adapter<t
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val textView: TextView = itemView.text_view
         init {
-            itemView.setOnClickListener{ v: View ->
-                val intent = Intent (this, Tutors::class.java)
-                startActivity();
+            itemView.setOnClickListener{
+                val intent = Intent(itemView.context, Tutors::class.java)
+                itemView.context.startActivity(intent)
             }
         }
     }
