@@ -1,5 +1,6 @@
 package com.tutorin.app
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -14,17 +15,15 @@ class Tutors : AppCompatActivity(), tutorAdapter.OnItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutor)
-
         recycler_tutor.adapter = adapter
         recycler_tutor.layoutManager = LinearLayoutManager(this)
         recycler_tutor.setHasFixedSize(true )
     }
 
-    override fun onItemClick(position: Int) {
-        Toast.makeText(this, "Item $position clicked", Toast.LENGTH_SHORT).show()
-        val clickedItem = tutorList[position]
-        clickedItem.text1 = "Clicked"
-        adapter.notifyItemChanged(position)
+    override fun onItemClick(item: tutorDataExample, position: Int) {
+        Toast.makeText(this, "Tutor "+ position + " Clicked", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, tutorProfile::class.java)
+        startActivity(intent)
 
     }
 

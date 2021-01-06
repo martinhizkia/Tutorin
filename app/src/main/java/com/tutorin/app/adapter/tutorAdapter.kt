@@ -1,5 +1,6 @@
 package com.tutorin.app.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,32 +23,30 @@ class tutorAdapter(
     }
 
     override fun onBindViewHolder(holder: tutorViewHolder, position: Int) {
-        val currentItem = tutorList[position]
-        holder.imageView.setImageResource(currentItem.imageResource)
-        holder.textView1.text = currentItem.text1
+//        val currentItem = tutorList[position]
+//        holder.imageView.setImageResource(currentItem.imageResource)
+//        holder.textView1.text = currentItem.text1
+        holder.initialize(tutorList.get(position), listener)
 
     }
 
     override fun getItemCount() = tutorList.size
 
-    inner class tutorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener{
+    inner class tutorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val imageView: ImageView = itemView.tutor_image
         val textView1: TextView = itemView.tutor_list_name
 
-        init{
-            itemView.setOnClickListener(this)
-        }
+        fun initialize(item: tutorDataExample, action:OnItemClickListener){
+            textView1.text = item.text1
+            imageView.setImageResource(item.imageResource)
 
-        override fun onClick(v: View?) {
-            val position = adapterPosition
-            if(position != RecyclerView.NO_POSITION){
-                listener.onItemClick(position)
+            itemView.setOnClickListener{
+                action.onItemClick(item, adapterPosition)
             }
-
         }
 
     }
     interface  OnItemClickListener {
-        fun onItemClick(position: Int)
+        fun onItemClick( item: tutorDataExample, position: Int)
     }
 }
