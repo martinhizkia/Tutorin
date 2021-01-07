@@ -1,0 +1,816 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_3_29_PM__Default_Changelist_.xml
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_3_29_PM__Default_Changelist_.xml	(revision 373b0fd1e9a87123dc8ad7a88c8dacc335782f45)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_3_29_PM__Default_Changelist_.xml	(revision 373b0fd1e9a87123dc8ad7a88c8dacc335782f45)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_12_14_2020_3_29_PM_[Default_Changelist]" date="1607934570730" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_3_29_PM_[Default_Changelist]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 12/14/2020 3:29 PM [Default Changelist]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]/shelved.patch
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]/shelved.patch	(revision 373b0fd1e9a87123dc8ad7a88c8dacc335782f45)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]/shelved.patch	(revision 373b0fd1e9a87123dc8ad7a88c8dacc335782f45)
+@@ -1,322 +0,0 @@
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]/shelved.patch
+-===================================================================
+---- .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]/shelved.patch	(revision 97c1cf09e7b8099cc0f14740ffdaab4b55fa930c)
+-+++ .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]/shelved.patch	(revision 97c1cf09e7b8099cc0f14740ffdaab4b55fa930c)
+-@@ -1,307 +0,0 @@
+--Index: app/src/main/java/com/tutorin/app/student/HomeFragment.kt
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+>package com.tutorin.app.student\r\n\r\nimport android.os.Bundle\r\nimport androidx.fragment.app.Fragment\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport com.tutorin.app.R\r\n\r\n// TODO: Rename parameter arguments, choose names that match\r\n\r\nclass HomeFragment : Fragment() {\r\n    override fun onCreateView(\r\n        inflater: LayoutInflater, container: ViewGroup?,\r\n        savedInstanceState: Bundle?\r\n    ): View? {\r\n        // Inflate the layout for this fragment\r\n        return inflater.inflate(R.layout.fragment_home, container, false)\r\n    }\r\n\r\n\r\n}
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+----- app/src/main/java/com/tutorin/app/student/HomeFragment.kt	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+--+++ app/src/main/java/com/tutorin/app/student/HomeFragment.kt	(date 1605865921887)
+--@@ -17,6 +17,4 @@
+--         // Inflate the layout for this fragment
+--         return inflater.inflate(R.layout.fragment_home, container, false)
+--     }
+---
+---
+-- }
+--\ No newline at end of file
+--Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]/shelved.patch
+--===================================================================
+----- .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]/shelved.patch	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+--+++ .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]/shelved.patch	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+--@@ -1,275 +0,0 @@
+---Index: app/src/main/res/layout/item_history.xml
+---IDEA additional info:
+---Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+---<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.cardview.widget.CardView xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:card_view=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/card_view\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:layout_gravity=\"center\"\r\n    android:layout_marginLeft=\"8dp\"\r\n    android:layout_marginTop=\"4dp\"\r\n    android:layout_marginRight=\"8dp\"\r\n    android:layout_marginBottom=\"4dp\"\r\n    card_view:cardCornerRadius=\"4dp\">\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"200dp\"\r\n        android:padding=\"8dp\">\r\n\r\n        <ImageView\r\n            android:id=\"@+id/img_subject\"\r\n            android:layout_width=\"139dp\"\r\n            android:layout_height=\"179dp\"\r\n            android:layout_marginBottom=\"4dp\"\r\n            android:scaleType=\"centerCrop\"\r\n            tools:src=\"@color/colorAccent\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/tv_subjectName\"\r\n            android:layout_width=\"191dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"16dp\"\r\n            android:layout_marginLeft=\"16dp\"\r\n            android:layout_marginTop=\"16dp\"\r\n            android:layout_marginRight=\"16dp\"\r\n            android:layout_marginBottom=\"8dp\"\r\n            android:layout_toEndOf=\"@id/img_subject\"\r\n            android:layout_toRightOf=\"@id/img_subject\"\r\n            android:textSize=\"16sp\"\r\n            android:textStyle=\"bold\"\r\n            tools:text=\"@string/subjectnameHistory\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/tv_item_detail\"\r\n            android:layout_width=\"194dp\"\r\n            android:layout_height=\"75dp\"\r\n            android:layout_above=\"@+id/layout_button\"\r\n            android:layout_below=\"@id/tv_subjectName\"\r\n            android:layout_marginLeft=\"16dp\"\r\n            android:layout_marginRight=\"16dp\"\r\n            android:layout_marginBottom=\"4dp\"\r\n            android:layout_toEndOf=\"@id/img_subject\"\r\n            android:layout_toRightOf=\"@id/img_subject\"\r\n            android:ellipsize=\"end\"\r\n            android:maxLines=\"5\"\r\n            tools:text=\"@string/detailHistory\" />\r\n\r\n        <LinearLayout\r\n            android:id=\"@+id/layout_button\"\r\n            android:layout_width=\"192dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_alignParentBottom=\"true\"\r\n            android:layout_marginStart=\"16dp\"\r\n            android:layout_marginLeft=\"16dp\"\r\n            android:layout_marginBottom=\"10dp\"\r\n            android:layout_toEndOf=\"@id/img_subject\"\r\n            android:layout_toRightOf=\"@id/img_subject\"\r\n            android:orientation=\"horizontal\">\r\n\r\n            <Button\r\n                android:id=\"@+id/btn_viewDetail\"\r\n                style=\"@style/Widget.AppCompat.Button.Colored\"\r\n                android:layout_width=\"86dp\"\r\n                android:layout_height=\"match_parent\"\r\n                android:layout_weight=\"1\"\r\n                android:text=\"@string/viewDetailHistory\"\r\n                android:textSize=\"12sp\" />\r\n\r\n            <Button\r\n                android:id=\"@+id/btn_addtoFav\"\r\n                style=\"@style/Widget.AppCompat.Button.Colored\"\r\n                android:layout_width=\"98dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_weight=\"1\"\r\n                android:text=\"@string/addFavoriteHistory\"\r\n                android:textSize=\"12sp\" />\r\n        </LinearLayout>\r\n    </RelativeLayout>\r\n</androidx.cardview.widget.CardView>
+---Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+---<+>UTF-8
+---===================================================================
+------ app/src/main/res/layout/item_history.xml	(revision ea10d9ce3dc50b9ad5ca5a1d557d921aa1d4727a)
+---+++ app/src/main/res/layout/item_history.xml	(date 1605256515956)
+---@@ -10,80 +10,99 @@
+---     android:layout_marginTop="4dp"
+---     android:layout_marginRight="8dp"
+---     android:layout_marginBottom="4dp"
+----    card_view:cardCornerRadius="4dp">
+---+    card_view:cardCornerRadius="25dp">
+--- 
+---     <RelativeLayout
+---         android:layout_width="match_parent"
+----        android:layout_height="200dp"
+---+        android:layout_height="196dp"
+---         android:padding="8dp">
+--- 
+----        <ImageView
+----            android:id="@+id/img_subject"
+----            android:layout_width="139dp"
+----            android:layout_height="179dp"
+----            android:layout_marginBottom="4dp"
+----            android:scaleType="centerCrop"
+----            tools:src="@color/colorAccent" />
+----
+---         <TextView
+----            android:id="@+id/tv_subjectName"
+----            android:layout_width="191dp"
+---+            android:id="@+id/tv_orderID"
+---+            android:layout_width="115dp"
+---             android:layout_height="wrap_content"
+----            android:layout_marginStart="16dp"
+---+            android:layout_alignParentStart="true"
+---+            android:layout_alignParentTop="true"
+---+            android:layout_marginStart="15dp"
+---             android:layout_marginLeft="16dp"
+----            android:layout_marginTop="16dp"
+---+            android:layout_marginTop="15dp"
+---             android:layout_marginRight="16dp"
+----            android:layout_marginBottom="8dp"
+----            android:layout_toEndOf="@id/img_subject"
+----            android:layout_toRightOf="@id/img_subject"
+----            android:textSize="16sp"
+---+            android:textSize="15sp"
+---             android:textStyle="bold"
+----            tools:text="@string/subjectnameHistory" />
+---+            tools:text="@string/string_orderID" />
+--- 
+---         <TextView
+----            android:id="@+id/tv_item_detail"
+----            android:layout_width="194dp"
+----            android:layout_height="75dp"
+----            android:layout_above="@+id/layout_button"
+----            android:layout_below="@id/tv_subjectName"
+---+            android:id="@+id/tv_statusOrder"
+---+            android:layout_width="115dp"
+---+            android:layout_height="wrap_content"
+---+            android:layout_below="@+id/tv_orderID"
+---+            android:layout_alignStart="@+id/tv_orderID"
+---+            android:layout_alignEnd="@+id/tv_orderID"
+---+            android:layout_marginStart="0dp"
+---             android:layout_marginLeft="16dp"
+---+            android:layout_marginTop="10dp"
+---+            android:layout_marginEnd="0dp"
+---             android:layout_marginRight="16dp"
+----            android:layout_marginBottom="4dp"
+----            android:layout_toEndOf="@id/img_subject"
+----            android:layout_toRightOf="@id/img_subject"
+----            android:ellipsize="end"
+----            android:maxLines="5"
+----            tools:text="@string/detailHistory" />
+---+            android:textSize="15sp"
+---+            android:textStyle="bold"
+---+            tools:text="@string/string_orderStatus" />
+--- 
+----        <LinearLayout
+----            android:id="@+id/layout_button"
+----            android:layout_width="192dp"
+---+        <TextView
+---+            android:id="@+id/tv_subjectName"
+---+            android:layout_width="115dp"
+---             android:layout_height="wrap_content"
+---+            android:layout_alignParentTop="true"
+---+            android:layout_alignParentEnd="true"
+---+            android:layout_marginStart="137dp"
+---+            android:layout_marginTop="15dp"
+---+            android:layout_marginEnd="15dp"
+---+            android:layout_toEndOf="@+id/tv_orderID"
+---+            android:textSize="15sp"
+---+            android:textStyle="bold"
+---+            tools:text="@string/subjectnameHistory" />
+---+
+---+        <View
+---+            android:layout_width="372dp"
+---+            android:layout_height="1dp"
+---+            android:layout_alignStart="@+id/tv_statusOrder"
+---+            android:layout_alignEnd="@+id/tv_subjectName"
+---             android:layout_alignParentBottom="true"
+----            android:layout_marginStart="16dp"
+----            android:layout_marginLeft="16dp"
+----            android:layout_marginBottom="10dp"
+----            android:layout_toEndOf="@id/img_subject"
+----            android:layout_toRightOf="@id/img_subject"
+----            android:orientation="horizontal">
+---+            android:layout_marginStart="0dp"
+---+            android:layout_marginEnd="0dp"
+---+            android:layout_marginBottom="107dp"
+---+            android:background="#c0c0c0" />
+--- 
+----            <Button
+----                android:id="@+id/btn_viewDetail"
+----                style="@style/Widget.AppCompat.Button.Colored"
+----                android:layout_width="86dp"
+----                android:layout_height="match_parent"
+----                android:layout_weight="1"
+----                android:text="@string/viewDetailHistory"
+----                android:textSize="12sp" />
+---+        <TextView
+---+            android:id="@+id/tv_tutorName"
+---+            android:layout_width="115dp"
+---+            android:layout_height="wrap_content"
+---+            android:layout_below="@+id/tv_statusOrder"
+---+            android:layout_alignStart="@+id/tv_orderID"
+---+            android:layout_alignEnd="@+id/tv_orderID"
+---+            android:layout_marginTop="25dp"
+---+            android:textSize="15sp"
+---+            android:textStyle="bold"
+---+            tools:text="@string/string_tutorName" />
+--- 
+----            <Button
+----                android:id="@+id/btn_addtoFav"
+----                style="@style/Widget.AppCompat.Button.Colored"
+----                android:layout_width="98dp"
+----                android:layout_height="wrap_content"
+----                android:layout_weight="1"
+----                android:text="@string/addFavoriteHistory"
+----                android:textSize="12sp" />
+----        </LinearLayout>
+---+
+---+        <TextView
+---+            android:id="@+id/tv_orderDate"
+---+            android:layout_width="115dp"
+---+            android:layout_height="wrap_content"
+---+            android:layout_below="@+id/tv_statusOrder"
+---+            android:layout_alignStart="@+id/tv_subjectName"
+---+            android:layout_alignEnd="@+id/tv_subjectName"
+---+            android:layout_marginTop="28dp"
+---+            android:textSize="15sp"
+---+            android:textStyle="bold"
+---+            tools:text="@string/string_dateTime" />
+---+
+---+        <ImageView
+---+            android:layout_width="385dp"
+---+            android:layout_height="42dp"
+---+            android:layout_alignParentTop="true"
+---+            android:layout_marginTop="133dp"
+---+            android:background="@drawable/rect_black" />
+---+
+---     </RelativeLayout>
+--- </androidx.cardview.widget.CardView>
+---\ No newline at end of file
+---Index: app/src/main/res/values/strings.xml
+---IDEA additional info:
+---Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+---<+><resources>\r\n    <string name=\"app_name\">Tutorin</string>\r\n    <string-array name=\"Choices\">\r\n        <item>Pelajar</item>\r\n        <item>Tutor</item>\r\n    </string-array>\r\n    <!-- TODO: Remove or change this placeholder text -->\r\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\r\n    <string name=\"addFavoriteHistory\">Add to Favorite </string>\r\n    <string name=\"viewDetailHistory\">View Detail </string>\r\n    <string name=\"detailHistory\">Order Detail </string>\r\n    <string name=\"subjectnameHistory\">Subject Name </string>\r\n    <string-array name=\"Topics\">\r\n        <item>Business</item>\r\n        <item>Engineering</item>\r\n        <item>Humanities</item>\r\n        <item>Medical</item>\r\n        <item>IT &#38; Development</item>\r\n        <item>Laws</item>\r\n    </string-array>\r\n\r\n</resources>
+---Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+---<+>UTF-8
+---===================================================================
+------ app/src/main/res/values/strings.xml	(revision ea10d9ce3dc50b9ad5ca5a1d557d921aa1d4727a)
+---+++ app/src/main/res/values/strings.xml	(date 1605254885914)
+---@@ -4,12 +4,19 @@
+---         <item>Pelajar</item>
+---         <item>Tutor</item>
+---     </string-array>
+----    <!-- TODO: Remove or change this placeholder text -->
+---     <string name="hello_blank_fragment">Hello blank fragment</string>
+---     <string name="addFavoriteHistory">Add to Favorite </string>
+---     <string name="viewDetailHistory">View Detail </string>
+---     <string name="detailHistory">Order Detail </string>
+---     <string name="subjectnameHistory">Subject Name </string>
+---+    <string name="orderID">Order ID</string>
+---+    <string name="orderStatus">Pending</string>
+---+    <string name="tutorName">Nama Tutor</string>
+---+    <string name="string_tutorName">nama Tutor</string>
+---+    <string name="string_orderID">order ID</string>
+---+    <string name="string_orderStatus">order status</string>
+---+    <string name="string_dateTime">tanggal</string>
+---+
+---     <string-array name="Topics">
+---         <item>Business</item>
+---         <item>Engineering</item>
+---Index: app/src/main/res/values/styles.xml
+---IDEA additional info:
+---Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+---<+><resources>\r\n    <!-- Base application theme. -->\r\n    <style name=\"AppTheme\" parent=\"Theme.AppCompat.Light.DarkActionBar\">\r\n        <!-- Customize your theme here. -->\r\n        <item name=\"colorPrimary\">@color/colorPrimary</item>\r\n        <item name=\"colorPrimaryDark\">@color/colorPrimaryDark</item>\r\n        <item name=\"colorAccent\">@color/colorAccent</item>\r\n        <item name=\"windowActionBar\">false</item>\r\n        <item name=\"windowNoTitle\">true</item>\r\n    </style>\r\n\r\n</resources>
+---Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+---<+>UTF-8
+---===================================================================
+------ app/src/main/res/values/styles.xml	(revision ea10d9ce3dc50b9ad5ca5a1d557d921aa1d4727a)
+---+++ app/src/main/res/values/styles.xml	(date 1605252852574)
+---@@ -1,7 +1,7 @@
+--- <resources>
+----    <!-- Base application theme. -->
+---+
+---     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+----        <!-- Customize your theme here. -->
+---+
+---         <item name="colorPrimary">@color/colorPrimary</item>
+---         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+---         <item name="colorAccent">@color/colorAccent</item>
+---Index: app/src/main/java/com/tutorin/app/adapter/historyAdapter.kt
+---IDEA additional info:
+---Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+---<+>package com.tutorin.app.adapter\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport android.widget.ImageView\r\nimport android.widget.TextView\r\nimport androidx.recyclerview.widget.RecyclerView\r\nimport com.bumptech.glide.Glide\r\nimport com.bumptech.glide.request.RequestOptions\r\nimport com.tutorin.app.*\r\nimport com.tutorin.app.`object`.dataHistory\r\n\r\nclass historyAdapter(private val listHistory: ArrayList<dataHistory>): RecyclerView.Adapter<historyAdapter.ListViewHolder>() {\r\n    inner class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {\r\n        var tvName: TextView = itemView.findViewById(R.id.tv_subjectName)\r\n        var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)\r\n        var imgPhoto: ImageView = itemView.findViewById(R.id.img_subject)\r\n    }\r\n\r\n    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {\r\n        val view: View = LayoutInflater.from(viewGroup.context)\r\n            .inflate(R.layout.item_history, viewGroup, false)\r\n        return ListViewHolder(view)\r\n    }\r\n\r\n    override fun onBindViewHolder(holder: ListViewHolder, position: Int) {\r\n        val history = listHistory[position]\r\n        Glide.with(holder.itemView.context)\r\n            .load(history.subjectPhoto)\r\n            .apply(RequestOptions().override(55, 55))\r\n            .into(holder.imgPhoto)\r\n        holder.tvName.text = history.subjectName\r\n        holder.tvDetail.text = history.orderDetail\r\n    }\r\n\r\n    override fun getItemCount(): Int {\r\n        return listHistory.size\r\n    }\r\n}
+---Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+---<+>UTF-8
+---===================================================================
+------ app/src/main/java/com/tutorin/app/adapter/historyAdapter.kt	(revision ea10d9ce3dc50b9ad5ca5a1d557d921aa1d4727a)
+---+++ app/src/main/java/com/tutorin/app/adapter/historyAdapter.kt	(date 1605256516315)
+---@@ -9,12 +9,13 @@
+--- import com.bumptech.glide.request.RequestOptions
+--- import com.tutorin.app.*
+--- import com.tutorin.app.`object`.dataHistory
+---+import org.w3c.dom.Text
+--- 
+--- class historyAdapter(private val listHistory: ArrayList<dataHistory>): RecyclerView.Adapter<historyAdapter.ListViewHolder>() {
+---     inner class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+---         var tvName: TextView = itemView.findViewById(R.id.tv_subjectName)
+----        var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
+----        var imgPhoto: ImageView = itemView.findViewById(R.id.img_subject)
+---+        var tutorName: TextView = itemView.findViewById(R.id.tv_tutorName)
+---+        var orderDate: TextView = itemView.findViewById(R.id.tv_orderDate)
+---     }
+--- 
+---     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {
+---@@ -25,12 +26,10 @@
+--- 
+---     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
+---         val history = listHistory[position]
+----        Glide.with(holder.itemView.context)
+----            .load(history.subjectPhoto)
+----            .apply(RequestOptions().override(55, 55))
+----            .into(holder.imgPhoto)
+---+
+---         holder.tvName.text = history.subjectName
+----        holder.tvDetail.text = history.orderDetail
+---+        holder.orderDate.text = "history.Date"
+---+        holder.tutorName.text= "Nama Tutornya"
+---     }
+--- 
+---     override fun getItemCount(): Int {
+---Index: app/src/main/res/drawable/rect_black.xml
+---IDEA additional info:
+---Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+---<+>UTF-8
+---===================================================================
+------ app/src/main/res/drawable/rect_black.xml	(date 1605256375500)
+---+++ app/src/main/res/drawable/rect_black.xml	(date 1605256375500)
+---@@ -0,0 +1,10 @@
+---+<?xml version="1.0" encoding="utf-8"?>
+---+<shape
+---+    xmlns:android = "http://schemas.android.com/apk/res/android"
+---+    android:shape="rectangle">
+---+    <solid android:color="@color/colorPrimaryDark" />
+---+    <corners android:bottomLeftRadius="25dp"
+---+        android:bottomRightRadius="25dp"
+---+        android:topLeftRadius="5dp"
+---+        android:topRightRadius="5dp"/>
+---+</shape>
+---\ No newline at end of file
+--Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM__Default_Changelist_.xml
+--===================================================================
+----- .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM__Default_Changelist_.xml	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+--+++ .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM__Default_Changelist_.xml	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+--@@ -1,4 +0,0 @@
+---<changelist name="Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]" date="1605264621845" recycled="true" deleted="true">
+---  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]/shelved.patch" />
+---  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/13/2020 5:50 PM [Default Changelist]" />
+---</changelist>
+--\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM__Default_Changelist_.xml
+-===================================================================
+---- .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM__Default_Changelist_.xml	(revision 97c1cf09e7b8099cc0f14740ffdaab4b55fa930c)
+-+++ .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM__Default_Changelist_.xml	(revision 97c1cf09e7b8099cc0f14740ffdaab4b55fa930c)
+-@@ -1,4 +0,0 @@
+--<changelist name="Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]" date="1606372362922" recycled="true" deleted="true">
+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]/shelved.patch" />
+--  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/26/2020 1:32 PM [Default Changelist]" />
+--</changelist>
+-\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_3_29_PM_[Default_Changelist]/shelved.patch
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_3_29_PM_[Default_Changelist]/shelved.patch	(revision 373b0fd1e9a87123dc8ad7a88c8dacc335782f45)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_3_29_PM_[Default_Changelist]/shelved.patch	(revision 373b0fd1e9a87123dc8ad7a88c8dacc335782f45)
+@@ -1,464 +0,0 @@
+-Index: app/src/main/java/com/tutorin/app/Register.kt
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>package com.tutorin.app\r\n\r\nimport android.content.Intent\r\nimport android.media.MediaPlayer\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport android.os.Bundle\r\nimport android.view.View\r\nimport android.widget.AdapterView\r\nimport android.widget.ArrayAdapter\r\nimport android.widget.Spinner\r\nimport android.widget.Toast\r\nimport com.google.android.gms.tasks.OnCompleteListener\r\nimport com.google.firebase.auth.FirebaseAuth\r\nimport com.google.firebase.database.FirebaseDatabase\r\nimport com.google.firebase.firestore.DocumentReference\r\nimport com.google.firebase.firestore.FirebaseFirestore\r\nimport com.tutorin.app.`object`.*\r\nimport com.google.firebase.ktx.Firebase\r\nimport kotlinx.android.synthetic.main.activity_login.*\r\nimport kotlinx.android.synthetic.main.activity_register.*\r\nimport org.w3c.dom.Document\r\n\r\nclass Register : AppCompatActivity(){\r\n    private lateinit var auth: FirebaseAuth\r\n    private lateinit var store: FirebaseFirestore\r\n    private lateinit var database: FirebaseDatabase\r\n    private lateinit var spinner: Spinner\r\n    var userID: String = \" \"\r\n    //val choices = resources.getStringArray(R.array.Tutoratobukan)\r\n    val choices = arrayOf<String>(\"Pelajar\", \"Tutor\")\r\n    var registeredUser: User = User()\r\n    var registeredFullName = \" \"\r\n    var registeredEmail = \" \"\r\n    var registeredPhoneNumber = \" \"\r\n    var registeredTutorORNot = false\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        setContentView(R.layout.activity_register)\r\n\r\n        auth = FirebaseAuth.getInstance()\r\n        spinner = findViewById<Spinner>(R.id.spinnerTutor)\r\n        val arrayAdapter = ArrayAdapter<String>(this,\r\n        android.R.layout.simple_list_item_1, choices)\r\n        spinner.adapter = arrayAdapter\r\n        spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener{\r\n            override fun onNothingSelected(parent: AdapterView<*>?) {\r\n                TODO(\"Not yet implemented\")\r\n            }\r\n\r\n            override fun onItemSelected(\r\n                parent: AdapterView<*>?,\r\n                view: View?,\r\n                position: Int,\r\n                id: Long\r\n            ) {\r\n                registeredTutorORNot = position != 0\r\n            }\r\n        }\r\n\r\n        btnRegister2.setOnClickListener{\r\n            val email: String = etEmail2.text.toString().trim()\r\n            val password: String = etPassword2.text.toString().trim()\r\n            registeredFullName = etName2.text.toString().trim()\r\n            registeredEmail = etEmail2.text.toString().trim()\r\n            registeredPhoneNumber = etPhoneNumber2.text.toString().trim()\r\n\r\n            if (email.isEmpty()){\r\n                etEmail.error = \"Email is Needed\"\r\n                etEmail.requestFocus()\r\n                return@setOnClickListener\r\n            }\r\n            if (password.isEmpty() || password.length <8 ){\r\n                etPassword.error = \"Password must has minimum 8 characters\"\r\n                etPassword.requestFocus()\r\n                return@setOnClickListener\r\n            }\r\n                    registerUser(email, password)\r\n        }\r\n\r\n\r\n        btnLogin2.setOnClickListener{\r\n            Intent( this@Register, Login::class.java).also{\r\n                startActivity(it)\r\n            }\r\n        }\r\n    }\r\n    private fun registerUser(email: String, password: String) {\r\n        auth.createUserWithEmailAndPassword(email, password)\r\n            .addOnCompleteListener(this){\r\n                if(it.isSuccessful){\r\n                    registeredUser.fullName = registeredFullName\r\n                    registeredUser.userEmail = registeredEmail\r\n                    registeredUser.tutorOrNot = registeredTutorORNot\r\n                    registeredUser.phoneNum = registeredPhoneNumber\r\n\r\n                    Intent(this@Register, Home::class.java).also{\r\n                        userID = auth.currentUser!!.uid\r\n                        FirebaseDatabase.getInstance().getReference(\"Users\")\r\n                            .child(FirebaseAuth.getInstance().currentUser!!.uid)\r\n                            .setValue(registeredUser).addOnCompleteListener(OnCompleteListener {\r\n                                if(it.isSuccessful){\r\n                                    Toast.makeText(this, \"User Created\", Toast.LENGTH_SHORT).show()\r\n                                }\r\n                            })\r\n\r\n                        it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK\r\n                        startActivity(it)\r\n                    }\r\n                }\r\n                else{\r\n                    Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()\r\n                }\r\n            }\r\n        }\r\n    override fun onStart() {\r\n        super.onStart()\r\n        if(auth.currentUser != null){\r\n            Intent(this@Register, Home::class.java).also {\r\n                it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK\r\n                startActivity(it)\r\n            }\r\n        }\r\n    }\r\n}
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- app/src/main/java/com/tutorin/app/Register.kt	(revision cad108a664e3389b5c444f7427e9b848cee6bb3b)
+-+++ app/src/main/java/com/tutorin/app/Register.kt	(date 1607934035009)
+-@@ -93,20 +93,42 @@
+-                     registeredUser.userEmail = registeredEmail
+-                     registeredUser.tutorOrNot = registeredTutorORNot
+-                     registeredUser.phoneNum = registeredPhoneNumber
+--
+--                    Intent(this@Register, Home::class.java).also{
+--                        userID = auth.currentUser!!.uid
+--                        FirebaseDatabase.getInstance().getReference("Users")
+--                            .child(FirebaseAuth.getInstance().currentUser!!.uid)
+--                            .setValue(registeredUser).addOnCompleteListener(OnCompleteListener {
+--                                if(it.isSuccessful){
+--                                    Toast.makeText(this, "User Created", Toast.LENGTH_SHORT).show()
+--                                }
+--                            })
+--
+--                        it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+--                        startActivity(it)
+--                    }
+-+                    userID = auth.currentUser!!.uid
+-+                        if(registeredTutorORNot == false) {
+-+                            Intent(this@Register, Home::class.java).also {
+-+                                userID = auth.currentUser!!.uid
+-+                                FirebaseDatabase.getInstance().getReference("Users")
+-+                                    .child(FirebaseAuth.getInstance().currentUser!!.uid)
+-+                                    .setValue(registeredUser)
+-+                                    .addOnCompleteListener(OnCompleteListener {
+-+                                        if (it.isSuccessful) {
+-+                                            Toast.makeText(this, "User Created", Toast.LENGTH_SHORT)
+-+                                                .show()
+-+                                        }
+-+                                    })
+-+                                it.flags =
+-+                                    Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+-+                                startActivity(it)
+-+                            }
+-+                        }
+-+                        else{
+-+                            Intent(this@Register, Home::class.java).also {
+-+                                userID = auth.currentUser!!.uid
+-+                                FirebaseDatabase.getInstance().getReference("Tutors")
+-+                                    .child(FirebaseAuth.getInstance().currentUser!!.uid)
+-+                                    .setValue(registeredUser)
+-+                                    .addOnCompleteListener(OnCompleteListener {
+-+                                        if (it.isSuccessful) {
+-+                                            Toast.makeText(this, "User Created", Toast.LENGTH_SHORT)
+-+                                                .show()
+-+                                        }
+-+                                    })
+-+                                it.flags =
+-+                                    Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+-+                                startActivity(it)
+-+                            }
+-+                        }
+-+
+-                 }
+-                 else{
+-                     Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
+-@@ -122,4 +144,35 @@
+-             }
+-         }
+-     }
+--}
+-\ No newline at end of file
+-+}
+-+
+-+/*
+-+private fun registerUser(email: String, password: String) {
+-+    auth.createUserWithEmailAndPassword(email, password)
+-+        .addOnCompleteListener(this){
+-+            if(it.isSuccessful){
+-+                registeredUser.fullName = registeredFullName
+-+                registeredUser.userEmail = registeredEmail
+-+                registeredUser.tutorOrNot = registeredTutorORNot
+-+                registeredUser.phoneNum = registeredPhoneNumber
+-+
+-+                Intent(this@Register, Home::class.java).also{
+-+                    userID = auth.currentUser!!.uid
+-+                    FirebaseDatabase.getInstance().getReference("Users")
+-+                        .child(FirebaseAuth.getInstance().currentUser!!.uid)
+-+                        .setValue(registeredUser).addOnCompleteListener(OnCompleteListener {
+-+                            if(it.isSuccessful){
+-+                                Toast.makeText(this, "User Created", Toast.LENGTH_SHORT).show()
+-+                            }
+-+                        })
+-+
+-+                    it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+-+                    startActivity(it)
+-+                }
+-+            }
+-+            else{
+-+                Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
+-+            }
+-+        }
+-+}
+-+*/
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM__Default_Changelist_.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM__Default_Changelist_.xml	(date 1607930670223)
+-+++ .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM__Default_Changelist_.xml	(date 1607930670223)
+-@@ -0,0 +1,4 @@
+-+<changelist name="Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]" date="1607930279104" recycled="true" deleted="true">
+-+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]/shelved.patch" />
+-+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 12/14/2020 2:17 PM [Default Changelist]" />
+-+</changelist>
+-\ No newline at end of file
+-Index: .idea/discord.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/discord.xml	(date 1607930914535)
+-+++ .idea/discord.xml	(date 1607930914535)
+-@@ -0,0 +1,8 @@
+-+<?xml version="1.0" encoding="UTF-8"?>
+-+<project version="4">
+-+  <component name="DiscordProjectSettings">
+-+    <option name="show" value="PROJECT_FILES" />
+-+    <option name="nameOverrideEnabled" value="true" />
+-+    <option name="nameOverrideText" value="RPL Anjing Babi Monyet" />
+-+  </component>
+-+</project>
+-\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]/shelved.patch
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]/shelved.patch	(date 1607930276742)
+-+++ .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]/shelved.patch	(date 1607930276742)
+-@@ -0,0 +1,322 @@
+-+Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]/shelved.patch
+-+===================================================================
+-+--- .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]/shelved.patch	(revision 97c1cf09e7b8099cc0f14740ffdaab4b55fa930c)
+-++++ .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]/shelved.patch	(revision 97c1cf09e7b8099cc0f14740ffdaab4b55fa930c)
+-+@@ -1,307 +0,0 @@
+-+-Index: app/src/main/java/com/tutorin/app/student/HomeFragment.kt
+-+-IDEA additional info:
+-+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-+-<+>package com.tutorin.app.student\r\n\r\nimport android.os.Bundle\r\nimport androidx.fragment.app.Fragment\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport com.tutorin.app.R\r\n\r\n// TODO: Rename parameter arguments, choose names that match\r\n\r\nclass HomeFragment : Fragment() {\r\n    override fun onCreateView(\r\n        inflater: LayoutInflater, container: ViewGroup?,\r\n        savedInstanceState: Bundle?\r\n    ): View? {\r\n        // Inflate the layout for this fragment\r\n        return inflater.inflate(R.layout.fragment_home, container, false)\r\n    }\r\n\r\n\r\n}
+-+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-+-<+>UTF-8
+-+-===================================================================
+-+---- app/src/main/java/com/tutorin/app/student/HomeFragment.kt	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+-+-+++ app/src/main/java/com/tutorin/app/student/HomeFragment.kt	(date 1605865921887)
+-+-@@ -17,6 +17,4 @@
+-+-         // Inflate the layout for this fragment
+-+-         return inflater.inflate(R.layout.fragment_home, container, false)
+-+-     }
+-+--
+-+--
+-+- }
+-+-\ No newline at end of file
+-+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]/shelved.patch
+-+-===================================================================
+-+---- .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]/shelved.patch	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+-+-+++ .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]/shelved.patch	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+-+-@@ -1,275 +0,0 @@
+-+--Index: app/src/main/res/layout/item_history.xml
+-+--IDEA additional info:
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-+--<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.cardview.widget.CardView xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:card_view=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/card_view\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:layout_gravity=\"center\"\r\n    android:layout_marginLeft=\"8dp\"\r\n    android:layout_marginTop=\"4dp\"\r\n    android:layout_marginRight=\"8dp\"\r\n    android:layout_marginBottom=\"4dp\"\r\n    card_view:cardCornerRadius=\"4dp\">\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"200dp\"\r\n        android:padding=\"8dp\">\r\n\r\n        <ImageView\r\n            android:id=\"@+id/img_subject\"\r\n            android:layout_width=\"139dp\"\r\n            android:layout_height=\"179dp\"\r\n            android:layout_marginBottom=\"4dp\"\r\n            android:scaleType=\"centerCrop\"\r\n            tools:src=\"@color/colorAccent\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/tv_subjectName\"\r\n            android:layout_width=\"191dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"16dp\"\r\n            android:layout_marginLeft=\"16dp\"\r\n            android:layout_marginTop=\"16dp\"\r\n            android:layout_marginRight=\"16dp\"\r\n            android:layout_marginBottom=\"8dp\"\r\n            android:layout_toEndOf=\"@id/img_subject\"\r\n            android:layout_toRightOf=\"@id/img_subject\"\r\n            android:textSize=\"16sp\"\r\n            android:textStyle=\"bold\"\r\n            tools:text=\"@string/subjectnameHistory\" />\r\n\r\n        <TextView\r\n            android:id=\"@+id/tv_item_detail\"\r\n            android:layout_width=\"194dp\"\r\n            android:layout_height=\"75dp\"\r\n            android:layout_above=\"@+id/layout_button\"\r\n            android:layout_below=\"@id/tv_subjectName\"\r\n            android:layout_marginLeft=\"16dp\"\r\n            android:layout_marginRight=\"16dp\"\r\n            android:layout_marginBottom=\"4dp\"\r\n            android:layout_toEndOf=\"@id/img_subject\"\r\n            android:layout_toRightOf=\"@id/img_subject\"\r\n            android:ellipsize=\"end\"\r\n            android:maxLines=\"5\"\r\n            tools:text=\"@string/detailHistory\" />\r\n\r\n        <LinearLayout\r\n            android:id=\"@+id/layout_button\"\r\n            android:layout_width=\"192dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_alignParentBottom=\"true\"\r\n            android:layout_marginStart=\"16dp\"\r\n            android:layout_marginLeft=\"16dp\"\r\n            android:layout_marginBottom=\"10dp\"\r\n            android:layout_toEndOf=\"@id/img_subject\"\r\n            android:layout_toRightOf=\"@id/img_subject\"\r\n            android:orientation=\"horizontal\">\r\n\r\n            <Button\r\n                android:id=\"@+id/btn_viewDetail\"\r\n                style=\"@style/Widget.AppCompat.Button.Colored\"\r\n                android:layout_width=\"86dp\"\r\n                android:layout_height=\"match_parent\"\r\n                android:layout_weight=\"1\"\r\n                android:text=\"@string/viewDetailHistory\"\r\n                android:textSize=\"12sp\" />\r\n\r\n            <Button\r\n                android:id=\"@+id/btn_addtoFav\"\r\n                style=\"@style/Widget.AppCompat.Button.Colored\"\r\n                android:layout_width=\"98dp\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_weight=\"1\"\r\n                android:text=\"@string/addFavoriteHistory\"\r\n                android:textSize=\"12sp\" />\r\n        </LinearLayout>\r\n    </RelativeLayout>\r\n</androidx.cardview.widget.CardView>
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-+--<+>UTF-8
+-+--===================================================================
+-+----- app/src/main/res/layout/item_history.xml	(revision ea10d9ce3dc50b9ad5ca5a1d557d921aa1d4727a)
+-+--+++ app/src/main/res/layout/item_history.xml	(date 1605256515956)
+-+--@@ -10,80 +10,99 @@
+-+--     android:layout_marginTop="4dp"
+-+--     android:layout_marginRight="8dp"
+-+--     android:layout_marginBottom="4dp"
+-+---    card_view:cardCornerRadius="4dp">
+-+--+    card_view:cardCornerRadius="25dp">
+-+-- 
+-+--     <RelativeLayout
+-+--         android:layout_width="match_parent"
+-+---        android:layout_height="200dp"
+-+--+        android:layout_height="196dp"
+-+--         android:padding="8dp">
+-+-- 
+-+---        <ImageView
+-+---            android:id="@+id/img_subject"
+-+---            android:layout_width="139dp"
+-+---            android:layout_height="179dp"
+-+---            android:layout_marginBottom="4dp"
+-+---            android:scaleType="centerCrop"
+-+---            tools:src="@color/colorAccent" />
+-+---
+-+--         <TextView
+-+---            android:id="@+id/tv_subjectName"
+-+---            android:layout_width="191dp"
+-+--+            android:id="@+id/tv_orderID"
+-+--+            android:layout_width="115dp"
+-+--             android:layout_height="wrap_content"
+-+---            android:layout_marginStart="16dp"
+-+--+            android:layout_alignParentStart="true"
+-+--+            android:layout_alignParentTop="true"
+-+--+            android:layout_marginStart="15dp"
+-+--             android:layout_marginLeft="16dp"
+-+---            android:layout_marginTop="16dp"
+-+--+            android:layout_marginTop="15dp"
+-+--             android:layout_marginRight="16dp"
+-+---            android:layout_marginBottom="8dp"
+-+---            android:layout_toEndOf="@id/img_subject"
+-+---            android:layout_toRightOf="@id/img_subject"
+-+---            android:textSize="16sp"
+-+--+            android:textSize="15sp"
+-+--             android:textStyle="bold"
+-+---            tools:text="@string/subjectnameHistory" />
+-+--+            tools:text="@string/string_orderID" />
+-+-- 
+-+--         <TextView
+-+---            android:id="@+id/tv_item_detail"
+-+---            android:layout_width="194dp"
+-+---            android:layout_height="75dp"
+-+---            android:layout_above="@+id/layout_button"
+-+---            android:layout_below="@id/tv_subjectName"
+-+--+            android:id="@+id/tv_statusOrder"
+-+--+            android:layout_width="115dp"
+-+--+            android:layout_height="wrap_content"
+-+--+            android:layout_below="@+id/tv_orderID"
+-+--+            android:layout_alignStart="@+id/tv_orderID"
+-+--+            android:layout_alignEnd="@+id/tv_orderID"
+-+--+            android:layout_marginStart="0dp"
+-+--             android:layout_marginLeft="16dp"
+-+--+            android:layout_marginTop="10dp"
+-+--+            android:layout_marginEnd="0dp"
+-+--             android:layout_marginRight="16dp"
+-+---            android:layout_marginBottom="4dp"
+-+---            android:layout_toEndOf="@id/img_subject"
+-+---            android:layout_toRightOf="@id/img_subject"
+-+---            android:ellipsize="end"
+-+---            android:maxLines="5"
+-+---            tools:text="@string/detailHistory" />
+-+--+            android:textSize="15sp"
+-+--+            android:textStyle="bold"
+-+--+            tools:text="@string/string_orderStatus" />
+-+-- 
+-+---        <LinearLayout
+-+---            android:id="@+id/layout_button"
+-+---            android:layout_width="192dp"
+-+--+        <TextView
+-+--+            android:id="@+id/tv_subjectName"
+-+--+            android:layout_width="115dp"
+-+--             android:layout_height="wrap_content"
+-+--+            android:layout_alignParentTop="true"
+-+--+            android:layout_alignParentEnd="true"
+-+--+            android:layout_marginStart="137dp"
+-+--+            android:layout_marginTop="15dp"
+-+--+            android:layout_marginEnd="15dp"
+-+--+            android:layout_toEndOf="@+id/tv_orderID"
+-+--+            android:textSize="15sp"
+-+--+            android:textStyle="bold"
+-+--+            tools:text="@string/subjectnameHistory" />
+-+--+
+-+--+        <View
+-+--+            android:layout_width="372dp"
+-+--+            android:layout_height="1dp"
+-+--+            android:layout_alignStart="@+id/tv_statusOrder"
+-+--+            android:layout_alignEnd="@+id/tv_subjectName"
+-+--             android:layout_alignParentBottom="true"
+-+---            android:layout_marginStart="16dp"
+-+---            android:layout_marginLeft="16dp"
+-+---            android:layout_marginBottom="10dp"
+-+---            android:layout_toEndOf="@id/img_subject"
+-+---            android:layout_toRightOf="@id/img_subject"
+-+---            android:orientation="horizontal">
+-+--+            android:layout_marginStart="0dp"
+-+--+            android:layout_marginEnd="0dp"
+-+--+            android:layout_marginBottom="107dp"
+-+--+            android:background="#c0c0c0" />
+-+-- 
+-+---            <Button
+-+---                android:id="@+id/btn_viewDetail"
+-+---                style="@style/Widget.AppCompat.Button.Colored"
+-+---                android:layout_width="86dp"
+-+---                android:layout_height="match_parent"
+-+---                android:layout_weight="1"
+-+---                android:text="@string/viewDetailHistory"
+-+---                android:textSize="12sp" />
+-+--+        <TextView
+-+--+            android:id="@+id/tv_tutorName"
+-+--+            android:layout_width="115dp"
+-+--+            android:layout_height="wrap_content"
+-+--+            android:layout_below="@+id/tv_statusOrder"
+-+--+            android:layout_alignStart="@+id/tv_orderID"
+-+--+            android:layout_alignEnd="@+id/tv_orderID"
+-+--+            android:layout_marginTop="25dp"
+-+--+            android:textSize="15sp"
+-+--+            android:textStyle="bold"
+-+--+            tools:text="@string/string_tutorName" />
+-+-- 
+-+---            <Button
+-+---                android:id="@+id/btn_addtoFav"
+-+---                style="@style/Widget.AppCompat.Button.Colored"
+-+---                android:layout_width="98dp"
+-+---                android:layout_height="wrap_content"
+-+---                android:layout_weight="1"
+-+---                android:text="@string/addFavoriteHistory"
+-+---                android:textSize="12sp" />
+-+---        </LinearLayout>
+-+--+
+-+--+        <TextView
+-+--+            android:id="@+id/tv_orderDate"
+-+--+            android:layout_width="115dp"
+-+--+            android:layout_height="wrap_content"
+-+--+            android:layout_below="@+id/tv_statusOrder"
+-+--+            android:layout_alignStart="@+id/tv_subjectName"
+-+--+            android:layout_alignEnd="@+id/tv_subjectName"
+-+--+            android:layout_marginTop="28dp"
+-+--+            android:textSize="15sp"
+-+--+            android:textStyle="bold"
+-+--+            tools:text="@string/string_dateTime" />
+-+--+
+-+--+        <ImageView
+-+--+            android:layout_width="385dp"
+-+--+            android:layout_height="42dp"
+-+--+            android:layout_alignParentTop="true"
+-+--+            android:layout_marginTop="133dp"
+-+--+            android:background="@drawable/rect_black" />
+-+--+
+-+--     </RelativeLayout>
+-+-- </androidx.cardview.widget.CardView>
+-+--\ No newline at end of file
+-+--Index: app/src/main/res/values/strings.xml
+-+--IDEA additional info:
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-+--<+><resources>\r\n    <string name=\"app_name\">Tutorin</string>\r\n    <string-array name=\"Choices\">\r\n        <item>Pelajar</item>\r\n        <item>Tutor</item>\r\n    </string-array>\r\n    <!-- TODO: Remove or change this placeholder text -->\r\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\r\n    <string name=\"addFavoriteHistory\">Add to Favorite </string>\r\n    <string name=\"viewDetailHistory\">View Detail </string>\r\n    <string name=\"detailHistory\">Order Detail </string>\r\n    <string name=\"subjectnameHistory\">Subject Name </string>\r\n    <string-array name=\"Topics\">\r\n        <item>Business</item>\r\n        <item>Engineering</item>\r\n        <item>Humanities</item>\r\n        <item>Medical</item>\r\n        <item>IT &#38; Development</item>\r\n        <item>Laws</item>\r\n    </string-array>\r\n\r\n</resources>
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-+--<+>UTF-8
+-+--===================================================================
+-+----- app/src/main/res/values/strings.xml	(revision ea10d9ce3dc50b9ad5ca5a1d557d921aa1d4727a)
+-+--+++ app/src/main/res/values/strings.xml	(date 1605254885914)
+-+--@@ -4,12 +4,19 @@
+-+--         <item>Pelajar</item>
+-+--         <item>Tutor</item>
+-+--     </string-array>
+-+---    <!-- TODO: Remove or change this placeholder text -->
+-+--     <string name="hello_blank_fragment">Hello blank fragment</string>
+-+--     <string name="addFavoriteHistory">Add to Favorite </string>
+-+--     <string name="viewDetailHistory">View Detail </string>
+-+--     <string name="detailHistory">Order Detail </string>
+-+--     <string name="subjectnameHistory">Subject Name </string>
+-+--+    <string name="orderID">Order ID</string>
+-+--+    <string name="orderStatus">Pending</string>
+-+--+    <string name="tutorName">Nama Tutor</string>
+-+--+    <string name="string_tutorName">nama Tutor</string>
+-+--+    <string name="string_orderID">order ID</string>
+-+--+    <string name="string_orderStatus">order status</string>
+-+--+    <string name="string_dateTime">tanggal</string>
+-+--+
+-+--     <string-array name="Topics">
+-+--         <item>Business</item>
+-+--         <item>Engineering</item>
+-+--Index: app/src/main/res/values/styles.xml
+-+--IDEA additional info:
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-+--<+><resources>\r\n    <!-- Base application theme. -->\r\n    <style name=\"AppTheme\" parent=\"Theme.AppCompat.Light.DarkActionBar\">\r\n        <!-- Customize your theme here. -->\r\n        <item name=\"colorPrimary\">@color/colorPrimary</item>\r\n        <item name=\"colorPrimaryDark\">@color/colorPrimaryDark</item>\r\n        <item name=\"colorAccent\">@color/colorAccent</item>\r\n        <item name=\"windowActionBar\">false</item>\r\n        <item name=\"windowNoTitle\">true</item>\r\n    </style>\r\n\r\n</resources>
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-+--<+>UTF-8
+-+--===================================================================
+-+----- app/src/main/res/values/styles.xml	(revision ea10d9ce3dc50b9ad5ca5a1d557d921aa1d4727a)
+-+--+++ app/src/main/res/values/styles.xml	(date 1605252852574)
+-+--@@ -1,7 +1,7 @@
+-+-- <resources>
+-+---    <!-- Base application theme. -->
+-+--+
+-+--     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+-+---        <!-- Customize your theme here. -->
+-+--+
+-+--         <item name="colorPrimary">@color/colorPrimary</item>
+-+--         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+-+--         <item name="colorAccent">@color/colorAccent</item>
+-+--Index: app/src/main/java/com/tutorin/app/adapter/historyAdapter.kt
+-+--IDEA additional info:
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-+--<+>package com.tutorin.app.adapter\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport android.widget.ImageView\r\nimport android.widget.TextView\r\nimport androidx.recyclerview.widget.RecyclerView\r\nimport com.bumptech.glide.Glide\r\nimport com.bumptech.glide.request.RequestOptions\r\nimport com.tutorin.app.*\r\nimport com.tutorin.app.`object`.dataHistory\r\n\r\nclass historyAdapter(private val listHistory: ArrayList<dataHistory>): RecyclerView.Adapter<historyAdapter.ListViewHolder>() {\r\n    inner class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {\r\n        var tvName: TextView = itemView.findViewById(R.id.tv_subjectName)\r\n        var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)\r\n        var imgPhoto: ImageView = itemView.findViewById(R.id.img_subject)\r\n    }\r\n\r\n    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {\r\n        val view: View = LayoutInflater.from(viewGroup.context)\r\n            .inflate(R.layout.item_history, viewGroup, false)\r\n        return ListViewHolder(view)\r\n    }\r\n\r\n    override fun onBindViewHolder(holder: ListViewHolder, position: Int) {\r\n        val history = listHistory[position]\r\n        Glide.with(holder.itemView.context)\r\n            .load(history.subjectPhoto)\r\n            .apply(RequestOptions().override(55, 55))\r\n            .into(holder.imgPhoto)\r\n        holder.tvName.text = history.subjectName\r\n        holder.tvDetail.text = history.orderDetail\r\n    }\r\n\r\n    override fun getItemCount(): Int {\r\n        return listHistory.size\r\n    }\r\n}
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-+--<+>UTF-8
+-+--===================================================================
+-+----- app/src/main/java/com/tutorin/app/adapter/historyAdapter.kt	(revision ea10d9ce3dc50b9ad5ca5a1d557d921aa1d4727a)
+-+--+++ app/src/main/java/com/tutorin/app/adapter/historyAdapter.kt	(date 1605256516315)
+-+--@@ -9,12 +9,13 @@
+-+-- import com.bumptech.glide.request.RequestOptions
+-+-- import com.tutorin.app.*
+-+-- import com.tutorin.app.`object`.dataHistory
+-+--+import org.w3c.dom.Text
+-+-- 
+-+-- class historyAdapter(private val listHistory: ArrayList<dataHistory>): RecyclerView.Adapter<historyAdapter.ListViewHolder>() {
+-+--     inner class ListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+-+--         var tvName: TextView = itemView.findViewById(R.id.tv_subjectName)
+-+---        var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
+-+---        var imgPhoto: ImageView = itemView.findViewById(R.id.img_subject)
+-+--+        var tutorName: TextView = itemView.findViewById(R.id.tv_tutorName)
+-+--+        var orderDate: TextView = itemView.findViewById(R.id.tv_orderDate)
+-+--     }
+-+-- 
+-+--     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {
+-+--@@ -25,12 +26,10 @@
+-+-- 
+-+--     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
+-+--         val history = listHistory[position]
+-+---        Glide.with(holder.itemView.context)
+-+---            .load(history.subjectPhoto)
+-+---            .apply(RequestOptions().override(55, 55))
+-+---            .into(holder.imgPhoto)
+-+--+
+-+--         holder.tvName.text = history.subjectName
+-+---        holder.tvDetail.text = history.orderDetail
+-+--+        holder.orderDate.text = "history.Date"
+-+--+        holder.tutorName.text= "Nama Tutornya"
+-+--     }
+-+-- 
+-+--     override fun getItemCount(): Int {
+-+--Index: app/src/main/res/drawable/rect_black.xml
+-+--IDEA additional info:
+-+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-+--<+>UTF-8
+-+--===================================================================
+-+----- app/src/main/res/drawable/rect_black.xml	(date 1605256375500)
+-+--+++ app/src/main/res/drawable/rect_black.xml	(date 1605256375500)
+-+--@@ -0,0 +1,10 @@
+-+--+<?xml version="1.0" encoding="utf-8"?>
+-+--+<shape
+-+--+    xmlns:android = "http://schemas.android.com/apk/res/android"
+-+--+    android:shape="rectangle">
+-+--+    <solid android:color="@color/colorPrimaryDark" />
+-+--+    <corners android:bottomLeftRadius="25dp"
+-+--+        android:bottomRightRadius="25dp"
+-+--+        android:topLeftRadius="5dp"
+-+--+        android:topRightRadius="5dp"/>
+-+--+</shape>
+-+--\ No newline at end of file
+-+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM__Default_Changelist_.xml
+-+-===================================================================
+-+---- .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM__Default_Changelist_.xml	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+-+-+++ .idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM__Default_Changelist_.xml	(revision 7a45c8c3a4f7ebb5bc9a025e630a255a1d64389b)
+-+-@@ -1,4 +0,0 @@
+-+--<changelist name="Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]" date="1605264621845" recycled="true" deleted="true">
+-+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_13_2020_5_50_PM_[Default_Changelist]/shelved.patch" />
+-+--  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/13/2020 5:50 PM [Default Changelist]" />
+-+--</changelist>
+-+-\ No newline at end of file
+-+Index: .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM__Default_Changelist_.xml
+-+===================================================================
+-+--- .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM__Default_Changelist_.xml	(revision 97c1cf09e7b8099cc0f14740ffdaab4b55fa930c)
+-++++ .idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM__Default_Changelist_.xml	(revision 97c1cf09e7b8099cc0f14740ffdaab4b55fa930c)
+-+@@ -1,4 +0,0 @@
+-+-<changelist name="Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]" date="1606372362922" recycled="true" deleted="true">
+-+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_26_2020_1_32_PM_[Default_Changelist]/shelved.patch" />
+-+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/26/2020 1:32 PM [Default Changelist]" />
+-+-</changelist>
+-+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM__Default_Changelist_.xml
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM__Default_Changelist_.xml	(revision 373b0fd1e9a87123dc8ad7a88c8dacc335782f45)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM__Default_Changelist_.xml	(revision 373b0fd1e9a87123dc8ad7a88c8dacc335782f45)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]" date="1607930279104" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_14_2020_2_17_PM_[Default_Changelist]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 12/14/2020 2:17 PM [Default Changelist]" />
+-</changelist>
+\ No newline at end of file

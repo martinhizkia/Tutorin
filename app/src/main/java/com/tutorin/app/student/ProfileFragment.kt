@@ -10,9 +10,8 @@ import android.widget.Button
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.tutorin.app.Login
+import com.tutorin.app.*
 import com.tutorin.app.R
-import com.tutorin.app.Register
 import com.tutorin.app.`object`.dataHistory
 import kotlinx.android.synthetic.main.fragment_profile.*
 
@@ -29,6 +28,8 @@ class ProfileFragment : Fragment() {
     ): View? {
         val myView: View = inflater.inflate(R.layout.fragment_profile, container, false)
         val btnUpdateProfile = myView.findViewById<TextView>(R.id.btnUpdateProfile)
+        val btnPrivacyPolicy = myView.findViewById<TextView>(R.id.privacy_policy)
+        val btnTermsofService = myView.findViewById<TextView>(R.id.terms_of_service)
         val btnLogOut = myView.findViewById<Button>(R.id.btnLogOut)
 
         auth = FirebaseAuth.getInstance()
@@ -44,6 +45,14 @@ class ProfileFragment : Fragment() {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(it)
             }
+        }
+        btnPrivacyPolicy.setOnClickListener{
+            val intent = Intent(activity, PrivacyPolicy::class.java)
+            startActivity(intent)
+        }
+        btnTermsofService.setOnClickListener{
+            val intent = Intent(activity, TermsofService::class.java)
+            startActivity(intent)
         }
         return myView
     }

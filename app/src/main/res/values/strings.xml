@@ -16,7 +16,14 @@
     <string name="string_orderID">order ID</string>
     <string name="string_orderStatus">order status</string>
     <string name="string_dateTime">tanggal</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name='pp1'>Tutorin built the Tutor.in app as a Free app. This SERVICE is provided by Tutorin at no cost and is intended for use as is.
+    This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+    If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+    The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Tutor.in unless otherwise defined in this Privacy Policy.</string>
+    <string name = 'pp2'>
 
+    </string>
     <string-array name="Topics">
         <item>Business</item>
         <item>Engineering</item>

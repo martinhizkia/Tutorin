@@ -26,6 +26,7 @@ class Home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         setSupportActionBar(toolbar)
+        getSupportActionBar()?.setDisplayShowTitleEnabled(false)
 
         auth = FirebaseAuth.getInstance()
         val currentUser = auth!!.currentUser
