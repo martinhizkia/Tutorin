@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.tutorin.app.`object`.dataHome
 import com.tutorin.app.adapter.tutorAdapter
 import kotlinx.android.synthetic.main.activity_tutor.*
 
@@ -12,6 +13,9 @@ class Tutors : AppCompatActivity(), tutorAdapter.OnItemClickListener {
     private val tutorList = generateDummyTutor(500)
     private val adapter = tutorAdapter(tutorList, this)
 
+    companion object {
+        const val TUTOR_PROFILE = ""
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutor)
@@ -21,8 +25,8 @@ class Tutors : AppCompatActivity(), tutorAdapter.OnItemClickListener {
     }
 
     override fun onItemClick(item: tutorDataExample, position: Int) {
-        Toast.makeText(this, "Tutor "+ position + " Clicked", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, tutorProfile::class.java)
+            .putExtra(TUTOR_PROFILE,dataHome("",""))
         startActivity(intent)
 
     }

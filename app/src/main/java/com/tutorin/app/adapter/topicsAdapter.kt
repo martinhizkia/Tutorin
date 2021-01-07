@@ -8,17 +8,24 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.tutorin.app.R
+import com.tutorin.app.Topics
 import com.tutorin.app.Tutors
+import com.tutorin.app.`object`.dataHome
 import com.tutorin.app.student.UpdateProfile
 import kotlinx.android.synthetic.main.business_layout.view.*
 
 class topicsAdapter(private val judulList: List<String>): RecyclerView.Adapter<topicsAdapter.ViewHolder>() {
+
+    companion object {
+        const val TUTOR_NAME = ""
+    }
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val textView: TextView = itemView.text_view
         init {
             itemView.setOnClickListener{
                 val intent = Intent(itemView.context, Tutors::class.java)
+                    .putExtra(TUTOR_NAME,dataHome("",""))
                 itemView.context.startActivity(intent)
             }
         }
