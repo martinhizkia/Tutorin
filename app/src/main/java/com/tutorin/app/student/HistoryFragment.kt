@@ -5,23 +5,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
-import android.view.View.inflate
 import android.view.ViewGroup
-import androidx.core.content.res.ColorStateListInflaterCompat.inflate
-import androidx.core.content.res.ComplexColorCompat.inflate
-import androidx.core.graphics.drawable.DrawableCompat.inflate
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.tutorin.app.Home
 import com.tutorin.app.R
 import com.tutorin.app.`object`.dataHistory
-import com.tutorin.app.`object`.exampleData
 import com.tutorin.app.adapter.historyAdapter
-import kotlinx.android.synthetic.main.detailed_history.*
-import kotlinx.android.synthetic.main.detailed_history.view.*
-import java.util.zip.Inflater
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -62,12 +54,19 @@ class HistoryFragment : Fragment() {
                         putExtra(DetailedHistory.orderDetail, data)
                     }
                     activity?.startActivity(movetoOrderDetailed)
+                    CustomIntent(activity, "right-to-left")
                 }
                 private fun putExtra(orderDetail: String, data: dataHistory) {
                 }
             }
         )
     }
+
+    private fun CustomIntent(onItemClickCallback: FragmentActivity?, s: String) {
+
+    }
+
+
     private fun onCreateComponent(){
         adapter = historyAdapter(list)
     }

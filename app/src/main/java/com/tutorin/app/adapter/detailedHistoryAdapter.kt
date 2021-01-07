@@ -19,8 +19,6 @@ class detailedHistoryAdapter(private val detailedHistory: ArrayList<dataHistory>
         var tvOrderDate: TextView = itemView.findViewById(R.id.detOrderDate)
         var tvTariff: TextView = itemView.findViewById(R.id.detOrderTariff)
         var tvTutorName: TextView = itemView.findViewById(R.id.detTutorName)
-        var tvRating: TextView = itemView.findViewById(R.id.detOrderRating)
-        var tvOrderReview: TextView = itemView.findViewById(R.id.detTutorReview)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHolder {
@@ -37,8 +35,6 @@ class detailedHistoryAdapter(private val detailedHistory: ArrayList<dataHistory>
         holder.tvOrderDate.text = detailed.orderDate
         holder.tvTariff.text = detailed.tariff.toString()
         holder.tvTutorName.text = detailed.tutorName
-        holder.tvRating.text = detailed.orderRating.toString()
-        holder.tvOrderReview.text = detailed.tutorReview
     }
 
     override fun getItemCount(): Int {
