@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tutors">
+    tools:context=".Tutors"
+    android:background="@color/colorwhite">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_tutor"
         android:padding="4dp"
         android:clipToPadding="false"
+        android:background="@color/colorwhite"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_tutors">
+        tools:listitem="@layout/item_tutors"
+        >
 
     </androidx.recyclerview.widget.RecyclerView>
 

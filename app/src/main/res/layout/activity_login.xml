@@ -35,7 +35,7 @@
                 android:background="@drawable/bottomnav_shape"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/colorPrimaryDark"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
