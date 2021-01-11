@@ -26,7 +26,7 @@ class Tutors : AppCompatActivity(), tutorAdapter.OnItemClickListener {
 
     override fun onItemClick(item: tutorDataExample, position: Int) {
         val intent = Intent(this, tutorProfile::class.java)
-            .putExtra(TUTOR_PROFILE,dataHome("",""))
+            .putExtra(TUTOR_PROFILE,dataHome("","", item.text1))
         startActivity(intent)
 
     }

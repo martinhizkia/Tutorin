@@ -25,7 +25,7 @@ class topicsAdapter(private val judulList: List<String>): RecyclerView.Adapter<t
         init {
             itemView.setOnClickListener{
                 val intent = Intent(itemView.context, Tutors::class.java)
-                    .putExtra(TUTOR_NAME,dataHome("",""))
+                    .putExtra(TUTOR_NAME,dataHome("","",""))
                 itemView.context.startActivity(intent)
             }
         }

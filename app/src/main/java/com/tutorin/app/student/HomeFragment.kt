@@ -27,32 +27,32 @@ class HomeFragment : Fragment() {
 
         view.buttonBusiness.setOnClickListener {
             val intent= Intent(activity,Topics::class.java)
-                .putExtra(TOPICS_NAME,dataHome("Business", ""))
+                .putExtra(TOPICS_NAME,dataHome("Business", "", ""))
             startActivity(intent)
         }
         view.buttonEngineering.setOnClickListener {
             val intent=Intent(activity,Topics::class.java)
-                .putExtra(TOPICS_NAME,dataHome("Engineering", ""))
+                .putExtra(TOPICS_NAME,dataHome("Engineering", "", ""))
             startActivity(intent)
         }
         view.buttonHumanities.setOnClickListener {
             val intent=Intent(activity,Topics::class.java)
-                .putExtra(TOPICS_NAME,dataHome("Humanities", ""))
+                .putExtra(TOPICS_NAME,dataHome("Humanities", "", ""))
             startActivity(intent)
         }
         view.buttonMedicals.setOnClickListener {
             val intent=Intent(activity,Topics::class.java)
-                .putExtra(TOPICS_NAME,dataHome("Medicals", ""))
+                .putExtra(TOPICS_NAME,dataHome("Medicals", "", ""))
             startActivity(intent)
         }
         view.buttonIT.setOnClickListener {
             val intent=Intent(activity,Topics::class.java)
-                .putExtra(TOPICS_NAME,dataHome("IT & Development", ""))
+                .putExtra(TOPICS_NAME,dataHome("IT & Development", "", ""))
             startActivity(intent)
         }
         view.buttonLaws.setOnClickListener {
             val intent=Intent(activity,Topics::class.java)
-                .putExtra(TOPICS_NAME,dataHome("Laws", ""))
+                .putExtra(TOPICS_NAME,dataHome("Laws", "", ""))
             startActivity(intent)
         }
 
