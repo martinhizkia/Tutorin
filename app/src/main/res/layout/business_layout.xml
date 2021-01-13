@@ -12,7 +12,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="353dp"
         android:padding="5dp">
 
         <ImageView
@@ -23,12 +23,26 @@
 
         <TextView
             android:id="@+id/text_view"
-            android:layout_width="wrap_content"
+            android:layout_width="196dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/image1"
+            android:layout_alignParentEnd="true"
             android:layout_marginLeft="80dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="24dp"
             android:text="Mata Kuliah" />
+
+        <TextView
+            android:id="@+id/desc_textview"
+            android:layout_width="236dp"
+            android:layout_height="77dp"
+            android:layout_below="@+id/text_view"
+            android:layout_alignStart="@+id/text_view"
+            android:layout_alignEnd="@+id/text_view"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="-20dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
