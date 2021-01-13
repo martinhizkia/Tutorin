@@ -1,16 +1,12 @@
 package com.tutorin.app.student
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tutorin.app.R
 import com.tutorin.app.`object`.dataHistory
-import com.tutorin.app.`object`.exampleData
 import com.tutorin.app.adapter.detailedHistoryAdapter
-import com.tutorin.app.adapter.historyAdapter
-import kotlinx.android.synthetic.main.detailed_history.*
 
 class DetailedHistory : AppCompatActivity() {
     private lateinit var rvOrderHistory: RecyclerView

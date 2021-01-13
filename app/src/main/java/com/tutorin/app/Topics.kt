@@ -25,14 +25,13 @@ class Topics : AppCompatActivity() {
     private var myRef: DatabaseReference = database.reference
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: topicsAdapter
-    companion object {
-        const val TOPICS_NAME = ""
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_topics)
         val ss = intent.getSerializableExtra(HomeFragment.TOPICS_NAME) as dataHome
+        val subjectName: String = ""
         val topicsName: TextView = findViewById(R.id.topicsName)
         topicsName.text = ss.topicName
         var topicName = ss.topicName.toString().toLowerCase()
@@ -51,14 +50,17 @@ class Topics : AppCompatActivity() {
         adapter.setOnItemClickCallback(object : topicsAdapter.OnItemClickCallback {
             override fun onItemClicked(data: topicsDescription) {
                 println(data)
+                val topsub = topicName + "//" + data.subjectName
                 val intent = Intent(this@Topics, Tutors::class.java).apply {
-                    putExtra(TOPICS_NAME, topicName)
+                    putExtra(Tutors.topicName, topsub)
                 }
                 startActivity(intent)
             }
 
         })
     }
+
+
     private fun addSubject(list: ArrayList<topicsDescription>, topicName: String): ArrayList<topicsDescription> {
         myRef.child("subject").child(topicName)
             .addListenerForSingleValueEvent(object : ValueEventListener {
@@ -78,7 +80,6 @@ class Topics : AppCompatActivity() {
         })
         return list
     }
-
 }
 
 
