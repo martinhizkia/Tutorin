@@ -5,15 +5,27 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.InputBinding
 import android.widget.TextView
+import com.tutorin.app.`object`.TutorObject
 import com.tutorin.app.`object`.dataHome
+import org.w3c.dom.Text
 
 class tutorProfile : AppCompatActivity() {
 
+    companion object {
+        var tutorProfile = ""
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutor_profile)
-        val getTutorName = intent.getSerializableExtra(Tutors.TUTOR_PROFILE) as dataHome
+        val tutorProfile = intent.getSerializableExtra(tutorProfile) as TutorObject
+        //val getTutorName = intent.getSerializableExtra(Tutors.TUTOR_PROFILE)
         val tutorName: TextView = findViewById(R.id.tutor_name_profile)
-        tutorName.text = getTutorName.tutorName
+        val tutorEmail: TextView = findViewById(R.id.tutor_email)
+        val tutorDesc: TextView = findViewById(R.id.tutor_description)
+        val tutorSubject:  TextView = findViewById(R.id.tutor_topic)
+        tutorName.text = tutorProfile.nama
+        tutorEmail.text = tutorProfile.emailtutor
+        tutorDesc.text = tutorProfile.description
+        tutorSubject.text = tutorProfile.subject
     }
 }
