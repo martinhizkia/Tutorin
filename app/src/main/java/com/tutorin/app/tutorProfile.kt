@@ -1,12 +1,16 @@
 package com.tutorin.app
 
 import android.app.Activity
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.InputBinding
+import android.widget.Button
 import android.widget.TextView
 import com.tutorin.app.`object`.TutorObject
 import com.tutorin.app.`object`.dataHome
+import kotlinx.android.synthetic.main.activity_tutor_profile.*
 import org.w3c.dom.Text
 
 class tutorProfile : AppCompatActivity() {
@@ -23,6 +27,11 @@ class tutorProfile : AppCompatActivity() {
         val tutorEmail: TextView = findViewById(R.id.tutor_email)
         val tutorDesc: TextView = findViewById(R.id.tutor_description)
         val tutorSubject:  TextView = findViewById(R.id.tutor_topic)
+        buttonLinkedin.setOnClickListener({
+            val url = tutorProfile.linkedin
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            startActivity(i)
+        })
         tutorName.text = tutorProfile.nama
         tutorEmail.text = tutorProfile.emailtutor
         tutorDesc.text = tutorProfile.description

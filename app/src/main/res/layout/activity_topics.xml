@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".Topics">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_backasset_list_tutor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <ImageView
+        android:layout_width="201dp"
+        android:layout_height="251dp"
+        android:src="@drawable/ic_background_list_tutor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/businessRecyclerView"
         android:layout_width="match_parent"
@@ -17,6 +39,7 @@
         tools:layout_editor_absoluteX="-14dp"
         tools:layout_editor_absoluteY="95dp"
         tools:listitem="@layout/business_layout" />
+
 
     <TextView
         android:id="@+id/topicsName"

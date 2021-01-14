@@ -5,17 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Tutors"
-    android:background="@color/colorwhite">
+    >
+
+
+    <ImageView
+        android:layout_width="289dp"
+        android:layout_height="298dp"
+        android:src="@drawable/tutor_background_assset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <ImageView
+        android:layout_width="289dp"
+        android:layout_height="298dp"
+        android:src="@drawable/tutor_backasset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_tutor"
-        android:padding="4dp"
-        android:clipToPadding="false"
-        android:background="@color/colorwhite"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_tutors"
-        >
+        android:clipToPadding="false"
+        android:padding="4dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="170dp"
+        tools:listitem="@layout/item_tutors">
 
     </androidx.recyclerview.widget.RecyclerView>
 
