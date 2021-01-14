@@ -8,6 +8,6 @@ class TermsofService : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_termsof_service)
-        webView.loadUrl("https://tutorin.flycricket.io/terms.html")
+        webView.loadUrl("http://marthizkia.my.id/terms_of_service.html")
     }
 }
