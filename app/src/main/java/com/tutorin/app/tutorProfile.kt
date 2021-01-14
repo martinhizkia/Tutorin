@@ -27,10 +27,12 @@ class tutorProfile : AppCompatActivity() {
         val tutorEmail: TextView = findViewById(R.id.tutor_email)
         val tutorDesc: TextView = findViewById(R.id.tutor_description)
         val tutorSubject:  TextView = findViewById(R.id.tutor_topic)
+        val tutorTariff: TextView =findViewById(R.id.tutor_fee)
         tutorName.text = tutorProfile.nama
         tutorEmail.text = tutorProfile.emailtutor
         tutorDesc.text = tutorProfile.description
         tutorSubject.text = tutorProfile.subject
+        tutorTariff.text = tutorProfile.tariff
 
         buttonLinkedin.setOnClickListener{
             val url = tutorProfile.linkedin
