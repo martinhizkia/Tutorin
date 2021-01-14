@@ -10,6 +10,4 @@ class dataHistory: Serializable {
     var tariff: String = ""
     var orderRating: String = ""
     var tutorReview: String = ""
-
-
 }
