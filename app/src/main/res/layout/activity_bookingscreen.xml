@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Appointment"
-
-        android:textFontWeight="600"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,16 +24,17 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="325dp"
-        android:layout_height="350dp"
+        android:layout_width="314dp"
+        android:layout_height="288dp"
         android:backgroundTint="@color/colorPrimary"
         android:elevation="10dp"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" >
+        app:layout_constraintVertical_bias="0.32">
 
 
         <ImageView
@@ -41,132 +42,144 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="70dp"
             android:layout_marginTop="35dp"
             app:srcCompat="@drawable/ic_topics" />
+
         <TextView
             android:id="@+id/booked_topics"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="{Topics}"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="70dp"
             android:layout_marginTop="70dp"
-
-            android:textFontWeight="600"
+            android:text="{Topics}"
+            android:textColor="@color/colorBlack"
             android:textSize="18sp"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tutor_name_params"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tutor Name"
             android:layout_marginStart="30dp"
             android:layout_marginTop="120dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            />
+            android:text="Tutor Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/horizontal_line"
+            android:layout_gravity="center" />
+
         <TextView
             android:id="@+id/tutor_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="{Tutor Name}"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="70dp"
             android:layout_marginTop="120dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            />
-        <TextView
-            android:id="@+id/order_date_params"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Order Date"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="30dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            />
-        <TextView
-            android:id="@+id/order_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="{Order Date}"
-            android:layout_gravity="center"
-            android:layout_marginStart="70dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            />
+            android:text="{Tutor Name}"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/total_session_params"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total Session"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="30dp"
             android:layout_marginTop="40dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            />
+            android:text="Total Session"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
         <TextView
             android:id="@+id/total_session"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="{Total Session}"
             android:layout_gravity="center"
             android:layout_marginStart="70dp"
             android:layout_marginTop="40dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            />
+            android:text="1 Ses"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
         <TextView
             android:id="@+id/fee_params"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fee"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="30dp"
             android:layout_marginTop="80dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            />
+            android:text="Fee"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
         <TextView
             android:id="@+id/fee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="{Fee}"
-
             android:layout_gravity="center"
+
             android:layout_marginStart="70dp"
             android:layout_marginTop="80dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            />
+            android:text="{Fee}"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
         <TextView
             android:id="@+id/Total_fee_params"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="130dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="30sp"
-            />
+            android:layout_marginTop="120dp"
+            android:text="Total"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
         <TextView
             android:id="@+id/Total_fee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="{Total}"
             android:layout_gravity="center"
             android:layout_marginStart="70dp"
-            android:layout_marginTop="130dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="30sp"
-            />
+            android:layout_marginTop="120dp"
+            android:text="{Total}"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please Contact Tutor Before Booking"
+        android:textColor="@color/colorRed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <ImageView
+        android:id="@+id/whatsApp"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_whatsapp_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
 
     <Button
         android:id="@+id/btnBooking"
@@ -175,7 +188,6 @@
         android:layout_marginHorizontal="40dp"
         android:background="@drawable/buttonauth_shape"
         android:text="Book a Session"
-
         android:textColor="@color/colorwhite"
         android:textFontWeight="800"
         android:textSize="25dp"

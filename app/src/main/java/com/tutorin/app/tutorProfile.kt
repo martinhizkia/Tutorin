@@ -27,14 +27,22 @@ class tutorProfile : AppCompatActivity() {
         val tutorEmail: TextView = findViewById(R.id.tutor_email)
         val tutorDesc: TextView = findViewById(R.id.tutor_description)
         val tutorSubject:  TextView = findViewById(R.id.tutor_topic)
-        buttonLinkedin.setOnClickListener({
-            val url = tutorProfile.linkedin
-            val i = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-            startActivity(i)
-        })
         tutorName.text = tutorProfile.nama
         tutorEmail.text = tutorProfile.emailtutor
         tutorDesc.text = tutorProfile.description
         tutorSubject.text = tutorProfile.subject
+
+        buttonLinkedin.setOnClickListener{
+            val url = tutorProfile.linkedin
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            startActivity(i)
+        }
+
+        btnAppointment.setOnClickListener{
+            val intent = Intent(this@tutorProfile, BookingscreenActivity::class.java).apply {
+                putExtra(BookingscreenActivity.tutorBooking, tutorProfile )
+            }
+            startActivity(intent)
+        }
     }
 }
