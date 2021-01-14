@@ -9,7 +9,7 @@ class PrivacyPolicy : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_privacy_policy)
-        webView.loadUrl("https://tutorin.flycricket.io/policy.html")
+        webView.loadUrl("http://marthizkia.my.id/privacy_policy.html")
 
     }
 
