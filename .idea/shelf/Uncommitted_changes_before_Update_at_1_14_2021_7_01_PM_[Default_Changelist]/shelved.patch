@@ -1,0 +1,53 @@
+Index: app/src/main/java/com/tutorin/app/Tutors.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.tutorin.app\r\n\r\nimport android.content.Intent\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport android.os.Bundle\r\nimport androidx.recyclerview.widget.LinearLayoutManager\r\nimport androidx.recyclerview.widget.RecyclerView\r\nimport com.google.firebase.auth.FirebaseAuth\r\nimport com.google.firebase.database.*\r\nimport com.tutorin.app.`object`.TutorObject\r\nimport com.tutorin.app.adapter.tutorAdapter\r\nimport kotlinx.android.synthetic.main.activity_tutor.*\r\n\r\nclass Tutors : AppCompatActivity(){\r\n    private var listTutor: ArrayList<TutorObject> = arrayListOf()\r\n    private var mAuth: FirebaseAuth? = FirebaseAuth.getInstance()\r\n    private val database: FirebaseDatabase = FirebaseDatabase.getInstance()\r\n    private var myRef: DatabaseReference = database.reference\r\n    private lateinit var recyclerView: RecyclerView\r\n    private lateinit var adapter: tutorAdapter\r\n    companion object {\r\n        var TUTOR_NAME = \"\"\r\n        var topicName = \"\"\r\n    }\r\n\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        setContentView(R.layout.activity_tutor)\r\n        val subjectName = intent.getSerializableExtra(topicName)\r\n        val slicedString = subjectName.toString().split(\"//\").toTypedArray()\r\n       // println(\"TEST\" + subjectName)\r\n       // println(\"nama pelajarannya adalah\" + slicedString[0] + \"dan\" + slicedString[1])\r\n        val topicname = slicedString[0]\r\n        val subjectname = slicedString[1]\r\n        onCreateComponent(listTutor)\r\n        addTutor(listTutor, topicname, subjectname)\r\n        showRecyclerView()\r\n\r\n\r\n\r\n\r\n       // recycler_tutor.adapter = adapter\r\n        //recycler_tutor.layoutManager = LinearLayoutManager(this)\r\n        //recycler_tutor.setHasFixedSize(true)\r\n    }\r\n    private fun onCreateComponent(list: ArrayList<TutorObject>) {\r\n        adapter = tutorAdapter(list)\r\n    }\r\n    private fun showRecyclerView(){\r\n        recyclerView = findViewById(R.id.recycler_tutor)\r\n        recyclerView.layoutManager =  LinearLayoutManager(this)\r\n        recyclerView.adapter = adapter\r\n        adapter.setOnItemClickCallback(object : tutorAdapter.OnItemClickCallback {\r\n            override fun onItemClicked(data: TutorObject) {\r\n                println(data)\r\n                val intent = Intent(this@Tutors, tutorProfile::class.java).apply {\r\n                    putExtra(tutorProfile.tutorProfile, data)\r\n                }\r\n                startActivity(intent)\r\n            }\r\n\r\n        })\r\n    }\r\n    private fun addTutor(list: ArrayList<TutorObject>, topicName: String, subjectName : String): ArrayList<TutorObject> {\r\n        mAuth = FirebaseAuth.getInstance()\r\n        val currentUser = mAuth!!.currentUser\r\n\r\n        myRef.child(\"subject\").child(topicName).child(subjectName).child(\"tutor\")\r\n            .addListenerForSingleValueEvent(object : ValueEventListener {\r\n                override fun onCancelled(error: DatabaseError) {\r\n                }\r\n                override fun onDataChange(snapshot: DataSnapshot) {\r\n                    list.clear()\r\n                    for (tutor in snapshot.children) {\r\n                        val tutorProfile = TutorObject()\r\n                        tutorProfile.nama = tutor.child(\"nama\").value.toString()\r\n                        tutorProfile.subject = tutor.child(\"subject\").value.toString()\r\n                        tutorProfile.description = tutor.child(\"description\").value.toString()\r\n                        tutorProfile.emailtutor = tutor.child(\"emailtutor\").value.toString()\r\n                        tutorProfile.pendidikan = tutor.child(\"pendidikan\").value.toString()\r\n                        tutorProfile.tariff = tutor.child(\"tariff\").value.toString()\r\n                        tutorProfile.linkedin = tutor.child(\"linkedin\").value.toString()\r\n                        list.add(tutorProfile)\r\n                    }\r\n                    //println(list[0].subjectDesc)\r\n                    adapter.notifyDataSetChanged()\r\n                }\r\n            })\r\n        return list\r\n    }\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tutorin/app/Tutors.kt	(revision f04f643d1abe6959b8b6f2cbf1473d27fefa3ce7)
++++ app/src/main/java/com/tutorin/app/Tutors.kt	(date 1610624754328)
+@@ -81,6 +81,8 @@
+                         tutorProfile.pendidikan = tutor.child("pendidikan").value.toString()
+                         tutorProfile.tariff = tutor.child("tariff").value.toString()
+                         tutorProfile.linkedin = tutor.child("linkedin").value.toString()
++                        tutorProfile.notelp = tutor.child("notelp").value.toString()
++                        tutorProfile.whatsapp = tutor.child("whatsapp").value.toString()
+                         list.add(tutorProfile)
+                     }
+                     //println(list[0].subjectDesc)
+Index: app/src/main/java/com/tutorin/app/object/TutorObject.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.tutorin.app.`object`\r\nimport java.io.Serializable\r\nimport java.util.*\r\n\r\nclass TutorObject: Serializable {\r\n    var nama: String = \"\"\r\n    var description: String = \"\"\r\n    var emailtutor: String = \"\"\r\n    var pendidikan: String = \"\"\r\n    var subject: String = \"\"\r\n    var tariff: String = \"\"\r\n    var linkedin: String = \"\"\r\n    var notelp: String = \"\"\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tutorin/app/object/TutorObject.kt	(revision f04f643d1abe6959b8b6f2cbf1473d27fefa3ce7)
++++ app/src/main/java/com/tutorin/app/object/TutorObject.kt	(date 1610624754424)
+@@ -11,5 +11,6 @@
+     var tariff: String = ""
+     var linkedin: String = ""
+     var notelp: String = ""
++    var whatsapp: String = ""
+ 
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/tutorin/app/BookingscreenActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.tutorin.app\r\n\r\nimport android.content.Intent\r\nimport android.net.Uri\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport android.os.Bundle\r\nimport android.widget.TextView\r\nimport com.tutorin.app.`object`.TutorObject\r\nimport kotlinx.android.synthetic.main.activity_bookingscreen.*\r\nimport kotlinx.android.synthetic.main.activity_tutor_profile.*\r\n\r\nclass BookingscreenActivity : AppCompatActivity() {\r\n\r\n    companion object {\r\n        var tutorBooking = \"\"\r\n    }\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        setContentView(R.layout.activity_bookingscreen)\r\n        val tutorBooking = intent.getSerializableExtra(tutorBooking) as TutorObject\r\n        val orderTopic: TextView = findViewById(R.id.booked_topics)\r\n        val orderName: TextView = findViewById(R.id.tutor_name)\r\n        val orderFee: TextView = findViewById(R.id.fee)\r\n        val orderTotal: TextView = findViewById(R.id.Total_fee)\r\n\r\n        orderTopic.text = tutorBooking.subject\r\n        orderName.text = tutorBooking.nama\r\n        orderFee.text = tutorBooking.tariff\r\n        orderTotal.text = tutorBooking.tariff\r\n\r\n        whatsApp.setOnClickListener{\r\n            val url = tutorBooking.notelp\r\n            val i = Intent(Intent.ACTION_VIEW, Uri.parse(url))\r\n            startActivity(i)\r\n        }\r\n\r\n\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/tutorin/app/BookingscreenActivity.kt	(revision f04f643d1abe6959b8b6f2cbf1473d27fefa3ce7)
++++ app/src/main/java/com/tutorin/app/BookingscreenActivity.kt	(date 1610625098501)
+@@ -29,7 +29,7 @@
+         orderTotal.text = tutorBooking.tariff
+ 
+         whatsApp.setOnClickListener{
+-            val url = tutorBooking.notelp
++            val url = tutorBooking.whatsapp
+             val i = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+             startActivity(i)
+         }

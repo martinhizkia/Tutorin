@@ -29,7 +29,7 @@ class BookingscreenActivity : AppCompatActivity() {
         orderTotal.text = tutorBooking.tariff
 
         whatsApp.setOnClickListener{
-            val url = tutorBooking.notelp
+            val url = tutorBooking.whatsapp
             val i = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(i)
         }
@@ -38,10 +38,5 @@ class BookingscreenActivity : AppCompatActivity() {
             val intent = Intent(this@BookingscreenActivity, PurchasementActivity::class.java)
             startActivity(intent)
         }
-
-
-
-
-
     }
 }

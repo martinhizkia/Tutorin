@@ -11,5 +11,6 @@ class TutorObject: Serializable {
     var tariff: String = ""
     var linkedin: String = ""
     var notelp: String = ""
+    var whatsapp: String = ""
 
 }

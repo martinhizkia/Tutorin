@@ -81,6 +81,8 @@ class Tutors : AppCompatActivity(){
                         tutorProfile.pendidikan = tutor.child("pendidikan").value.toString()
                         tutorProfile.tariff = tutor.child("tariff").value.toString()
                         tutorProfile.linkedin = tutor.child("linkedin").value.toString()
+                        tutorProfile.notelp = tutor.child("notelp").value.toString()
+                        tutorProfile.whatsapp = tutor.child("whatsapp").value.toString()
                         list.add(tutorProfile)
                     }
                     //println(list[0].subjectDesc)
