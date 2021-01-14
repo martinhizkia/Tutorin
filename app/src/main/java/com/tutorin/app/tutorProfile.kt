@@ -46,5 +46,10 @@ class tutorProfile : AppCompatActivity() {
             }
             startActivity(intent)
         }
+        buttonLinkedin.setOnClickListener{
+            val url = tutorProfile.
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            startActivity(i)
+        }
     }
 }

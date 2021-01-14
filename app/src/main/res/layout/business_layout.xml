@@ -16,6 +16,13 @@
         android:layout_height="wrap_content"
         android:padding="5dp">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/buttonauth_shape"
+            android:backgroundTint="@color/colorPrimaryDark"
+            />
+
 
         <TextView
             android:id="@+id/text_view"
@@ -27,7 +34,7 @@
             android:layout_marginEnd="40dp"
             android:text="Mata Kuliah"
             android:textAlignment="center"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold" />
 
         <TextView

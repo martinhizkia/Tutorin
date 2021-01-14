@@ -18,15 +18,15 @@
         app:layout_constraintVertical_bias="0.06" />
 
     <ImageView
-        android:layout_width="201dp"
-        android:layout_height="251dp"
+        android:layout_width="404dp"
+        android:layout_height="487dp"
         android:src="@drawable/ic_background_list_tutor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.791" />
+        app:layout_constraintVertical_bias="0.668" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/businessRecyclerView"
@@ -45,15 +45,16 @@
         android:id="@+id/topicsName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="32dp"
+        android:text="Nama Topik"
         android:textColor="@android:color/black"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/businessRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
