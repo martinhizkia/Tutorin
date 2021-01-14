@@ -1,24 +1,19 @@
 package com.tutorin.app
 
 import android.content.Intent
-import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.Toast
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
-import com.tutorin.app.`object`.*
-import com.google.firebase.ktx.Firebase
+import com.tutorin.app.`object`.User
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
-import org.w3c.dom.Document
+
 
 class Register : AppCompatActivity(){
     private lateinit var auth: FirebaseAuth
@@ -55,6 +50,7 @@ class Register : AppCompatActivity(){
                 id: Long
             ) {
                 registeredTutorORNot = position != 0
+                (parent!!.getChildAt(0) as TextView).setTextColor(Color.WHITE)
             }
         }
 

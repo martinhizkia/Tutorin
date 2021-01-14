@@ -34,6 +34,13 @@ class BookingscreenActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        btnBooking.setOnClickListener{
+            val intent = Intent(this@BookingscreenActivity, PurchasementActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
 
 
     }
