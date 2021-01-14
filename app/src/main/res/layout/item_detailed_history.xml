@@ -171,43 +171,7 @@
                         android:textColor="@color/colorBlack"
                         android:textSize="20sp" />
                 </TableRow>
-
-
             </TableLayout>
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-
-
-    <Button
-        android:id="@+id/btnReport"
-        android:layout_width="283dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:background="@drawable/buttonauth_shape"
-        android:text="Report"
-        android:textColor="@color/colorwhite"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
-
-    <Button
-        android:id="@+id/btnFeedback"
-        android:layout_width="283dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:background="@drawable/buttonauth_shape"
-        android:text="Feedback"
-        android:textColor="@color/colorwhite"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
