@@ -34,7 +34,7 @@ class Tutors : AppCompatActivity(){
         val topicname = slicedString[0]
         val subjectname = slicedString[1]
         onCreateComponent(listTutor)
-        addTutor(listTutor, topicname, subjectname)
+        addTutor(listTutor, topicname.toLowerCase(), subjectname.toLowerCase())
         showRecyclerView()
 
 
