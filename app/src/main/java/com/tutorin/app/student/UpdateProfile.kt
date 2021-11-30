@@ -90,6 +90,16 @@ class UpdateProfile : AppCompatActivity() {
                     }
                 }
         }
+        ic_unverified.setOnClickListener {
+            user?.sendEmailVerification()?.addOnCompleteListener {
+                if (it.isSuccessful){
+                    Toast.makeText(this, "Email verifikasi telah dikirimkan!", Toast.LENGTH_SHORT).show()
+                }
+                else{
+                    Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 
     private fun intentCamera() {
@@ -124,6 +134,4 @@ class UpdateProfile : AppCompatActivity() {
             }
         }
     }
-
-
 }
